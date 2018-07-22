@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+			<!-- TG: I put this line below in on the recommendation of CSS The Missing Manual, Loc 10170 -->
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>TG draft website</title>
+				<link rel="stylesheet" href="css/global.css">
+					<!-- This is the link to an external style sheet -->
+					<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+        
+                    <script>
+                        
+                        $(document).ready(function(){
+  $('.nav__item').on('click', function(){
+    $('#nav_toggle').prop('checked', !$('#nav_toggle').prop('checked'));
+  });
+});
+        
+                    </script>
+        
+        
+					</head>
+					<body>
+                        
+                        <!-- NAVIGATION -->
+          <div class="nav">
+  <input class="nav__toggle" type="checkbox" id="nav_toggle">
+  <label class="nav__button" for="nav_toggle">
+            <span class="nav__button-part"></span>
+            <span class="nav__button-part"></span>
+            <span class="nav__button-part"></span>
+        </label>
+  <nav class="nav__items-container" role="navigation">
+    <ul class="nav__list">
+      <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+      <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+      <li class="nav__item"><a class="nav__link" href="#FAQ">FAQ</a></li>
+      <li class="nav__item"><a class="nav__link" href="#reviews">Reviews</a></li>
+      <li class="nav__item"><a class="nav__link" href="#testimonials">Testimonials</a></li>
+      <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+                        
+                        
+                        <!-- END OF NAVIGATION -->
+                        
+                       
+                       
+						<section class="one" id="home">
+							<div class="second">
+								<h1>Max Brewer</h1>
+								<br>
+									<h2>editing &middot; writing &middot; wordsmithery </h2>
+								</div>
+							</section>
+							<!-- End of "one" --> 
+                        <!-- ---------------- ABOUT---------------- -->
+							<section class="about" id="about">
+								<div class="about-wrapper-1">
+									<h1>About</h1>
+									<section class="about-blurb">
+										<p>I am an editor and writer who has worked for over seven years as deputy editor of 
+											<span class="title">Good Words</span>, Australia&rsquo;s only magazine about books and reading pitched at the general reader. I am dedicated to clear expression in language, and I enjoy helping other writers to express themselves more clearly. Your written words don&rsquo;t have to be pompous and obscure to make an impact, but they should get your message across. Editing does, to some extent, involve following what might seem like persnickety rules, but those rules can be broken. The trick is to ensure that you break them consciously and not because of ignorance.  Being a good editor requires constant education, whether that&rsquo;s in the form of formal courses or a program of self-administered instruction. I read Strunk and White&rsquo;s 
+											<span class="title">The Elements of Style</span> every couple of years, get new  I am also deeply interested in the lost art of rhetoric and the effect it can have on improving ...
+										</p>
+										<p>Things I&rsquo;m interested in:</p>
+										<ul>
+											<li>
+												<a href="https://en.wikipedia.org/wiki/Expletive_infixation" target="_blank">expletive infixations</a>
+											</li>
+											<li>words, language and reading (sort of goes without saying)</li>
+											<li>taking photos with a vintage model (2007) digital camera and using off-camera flash</li>
+											<li>world geography and learning more about our planet (billionaires like Sir Richard Branson can have outer space travel all to themselves ... I&rsquo;m so not interested in it while there's still so much to discover here on Planet Earth.)</li>
+											<li>watching old TV series long after they were first released (
+												<span class="title">The Sopranos</span>, 
+												<span class="title">Nurse Jackie</span>, 
+												<span class="title">Downton Abbey</span>) ... I like to let the initial kerfuffle fade away and check out if they still stand the test of time several years after their initial release
+											</li>
+											<li>urban farming</li>
+										</ul>
+									</section>
+									<!-- End of section class="about-blurb" -->
+								</div>
+								<!-- End of div class="about-wrapper-1" -->
+							</section>
+							<!-- End of "about" -->
+                        							<!------------------ FAQ------------------>
+							<section class="separator-image-FAQ" id="FAQ">
+								<h1>
+									<span class="up">F</span>
+									<span class="down">A</span>
+									<span class="up">Q</span>
+								</h1>
+							</section>
+							<!-- End of section class="separator-image-FAQ" -->
+							<section class="FAQ">
+								<div class="FAQ-wrapper-1">
+									<section class="FAQ-questions">
+										<details>
+											<summary>Q: You&rsquo;re primarily an editor and writer. What prompted you to teach yourself how to create a website from scratch – without Wordpress, Wix or similar template options?</summary>
+											<p>
+												<span class="answer">A</span>: The first thing you should know is that I am so 
+												<em>not</em> the stereotypical tech-head who revels in analysing long lines of code. 
+											</p>
+											<p>My ability to use HTML and CSS happened by accident. </p>
+											<p>I was working at a bookshop in Sydney, where a colleague showed me his copy of a book titled 
+												<span class="title">
+													<a href="https://www.amazon.com/Head-First-HTML-CSS-Standards-Based/dp/0596159900/ref=sr_1_1?ie=UTF8&qid=1522206046&sr=8-1&keywords=head+first+html" target="_blank">Head First HTML and CSS: A Learner&rsquo;s Guide to Creating Standards-Based Web Pages</a>
+												</span> by Elisabeth Robson. This book was so different from other books about computers and web technology. It deliberately incorporated many different principles of learning &ndash; such as overlearning and using images and diagrams to reinforce lessons &ndash; to ensure that the ideas taught in the book stay firmly in the reader&rsquo;s mind.
+											</p>
+											<p>The text and images are surrounded by a lot of white space &ndash; which does unfortunately increase the size of the book &ndash; but the payoff is that the content has a spacious feel about it and it never feels crammed in or overwhelming. I don&rsquo;t mind having to deal with a hefty book if it means that I&rsquo;m going to understand the content &ndash; which is not something you can say about a lot of web technology books. Many of them fail to keep the reader&rsquo;s needs uppermost in their priorities, and as a result they are poorly written and incomprehensible in large sections.</p>
+											<p>So I bought my own copy of 
+												<span class="title">Head First HTML and CSS</span> and I&rsquo;ve never looked back. Since then I&rsquo;ve been able to understand more complex books on the subject, but the really badly written web technology books are still beyond me! Only a true geek could penetrate their mysteries and emerge enlightened.
+											</p>
+											<p>I just love this book. I&rsquo;d always wanted to create a website for myself from scratch, largely because I can&rsquo;t stand the cookie-cutter look of websites based on WordPress, Wix and other sites. Regardless of how many templates they have, they all look so boringly generic, as if they were created from a template &ndash; which they were. I wanted to have as much control as possible over the look of my site, and although I&rsquo;ve had frustrating moments in trying to get everything working (as does every web developer, even the expert ones), it was worth it. This was the first book I&rsquo;d ever seen that made me think that a regular person &ndash; who didn&rsquo;t guzzle six-packs of Red Bull and play online games all day &ndash; might have a chance at learning this stuff. This is true of many of the books in the 
+												<span class="title">Head First</span> series of web technology books. One more thing: No, I&rsquo;m not getting any sponsorship or other kind of payment from O&rsquo;Reilly Media, the publisher of the 
+												<span class="title">Head First</span> books; I just think they are geniuses at making complex subjects relatively easy to understand. 
+											</p>
+										</details>
+										<details>
+											<summary>Q: What are your top two favourite words in the English language?</summary>
+											<p>
+												<span class="answer">A</span>: 
+												<em>Lozenge</em> and 
+												<em>preposterous</em>. The oozy sound of the &ldquo;z&rdquo; in lozenge hints at the soothing, buttery ingredients in these cough lollies that relieve scratchy throats. 
+											</p>
+											<p>
+												<i>Preposterous</i> became a favourite of mine a few years back after I saw the British TV series 
+												<span class="title">Monarch of the Glen</span>. The story, set in the Scottish Highlands, is about a young man, Archie, who is trying to restore the crumbling castle on his estate. He and his father often quarrel with a neighbour called Kilwillie, a tweedy, perpetually harrumphing, aristocratic gent (played by Julian Fellowes, creator of 
+												<span class="title">Downton Abbey</span>) who was frequently outraged by the behaviour of everyone around him. If someone suggested a particular course of action to Kilwillie of which he didn&rsquo;t approve, he would look at them aghast and spit out his favourite word that expressed his indignation &ndash; &ldquo;Pre-POS-terous!&rdquo; Note the stress on the second syllable, which is important to convey the full sense of Kilwillie&rsquo;s splenetic exasperation over what he has just heard. 
+											</p>
+										</details>
+										<details>
+											<summary>Q: Apparently you know the names of all 54 African countries and their capital cities. How did that happen?
+                    </summary>
+											<p>
+												<span class="answer">A</span>: A few years ago it occurred to me that I could name plenty of countries in Western Europe but very few in Africa. When asked to name African countries, I could, like most people, come up with a handful, such as South Africa, Kenya, Zimbabwe, Egypt and Libya. But there was no way I would have listed countries such as Malawi, Benin or Mauritania. And cities such as Lilongwe, N&rsquo;Djamena or Antananarivo were totally off my radar. (But I have known about Ouagadougou &ndash; the capital of Burkina Faso &ndash; ever since I was nine years old. This whimsical name, which sounds like an invention of Lewis Carroll, has stayed with me since then.) 
+											</p>
+											<p>I&rsquo;ve also noticed a strange phenomenon among many people who are about to go to Africa. They&rsquo;ll say, &ldquo;I&rsquo;m going to Africa&rdquo;.</p>
+											<p>
+												<i>What&rsquo;s so odd about that?</i>, you ask. But do you ever hear anyone say that they&rsquo;re going to Asia? 
+											</p>
+											<p>Not all that often. </p>
+											<p>They&rsquo;ll tell you the name of the country they&rsquo;re going to, such as Indonesia or Thailand or Myanmar. Telling you that they&rsquo;re going to Asia wouldn&rsquo;t be all that informative, because most people are familiar with the names of many Asian countries, and they want more detail.</p>
+											<p>But Africa, on the other hand, seems to be an amorphous mass of undifferentiated nations to most of us. The expression &ldquo;the Dark Continent&rdquo; really is an apt descriptor for Africa, as far as many of us are concerned ; we&rsquo;ve never 
+												<i>heard</i> of many of African countries, let alone know anything about them, so it&rsquo;s just easier to refer to the entire continent rather than be more specific.
+											</p>
+											<p>The fact that many African countries &ndash; such as Somalia, Chad and the Democratic Republic of the Congo &ndash; are no-go zones for tourists certainly doesn&rsquo;t help to improve our knowledge of them. Knowing that a country has a reputation for kidnapping, bludgeoning or shooting visitors so that they ultimately come home in a box doesn&rsquo;t exactly encourage travellers to flock to said country and learn more about it.</p>
+											<p>The fact that some African countries are off limits doesn&rsquo;t make me perversely want to visit them, but it does pique my curiosity to learn more about them from afar, and dream of the day when I might be able to roam across them without coming to harm &ndash; or living in dread that I will come to harm. </p>
+										</details>
+										<details>
+											<summary>Q: What are your favourite books?</summary>
+											<p>
+												<span class="answer">A</span>: The book that has had the biggest impact on me over the last few years is 
+												<span class="title">Free Will</span> by Sam Harris. This book has changed my life &ndash; really. It might not have changed my outer circumstances in any noticeable way, but it has certainly changed my thinking &ndash; and my attitudes towards my fellow human beings. 
+											</p>
+											<p>In a nutshell, Sam Harris argues that none of us have any free will, and he argues this case compellingly. This might sound frightening and bleak to some people, but it has certainly made me a lot more understanding &ndash; and forgiving &ndash; of the behaviour of other people. If we really can&rsquo;t do all that much to change our behaviour, and if we are just passive recipients of what our environments and our genetic endowments throw at us, then we should be more understanding of our foibles and fallibilities &ndash; those of other people and of ourselves.</p>
+											<p>There&rsquo;s not a lot of space to go into detail here, but coming to realise that we really have no free will &ndash; although it seems like we do &ndash; doesn&rsquo;t have to lead to fatalism, or passive attitude towards whatever happens to us. We still need to get up in the morning and strive to achieve our goals. Read the book for Sam Harris&rsquo;s detailed explanation of why coming to realise that we have no free will could be our redemption.</p>
+											<p>So what&rsquo;s it about? Briefly, the author sets out to convince the reader that we have no free will. At all. Not even a little bit.</p>
+											<p>This is a frightening prospect for many people &ndash; the idea that our hormones and our genetic endowments, for good or for ill, are the drivers of our thoughts and behaviours. Our environment </p>
+											<p>Other favourite books include 
+												<span class="title">The Missionary Position: Mother Teresa in Theory and Practice</span> by Christopher Hitchens. 
+												<span class="title">Joe Cinque&rsquo;s Consolation</span> by Helen Garner. 
+												<span class="title">The Lost Continent</span> by Bill Bryson. 
+												<span class="title">The Small Hand</span> and 
+												<span class="title">The Woman in Black</span> by Susan Hill. These books aren&rsquo;t necessarily at the top of my list, but they&rsquo;re the ones that come off the top of my head right now. 
+											</p>
+										</details>
+										<details>
+											<summary>Q: Who are your favourite authors?</summary>
+											<p>
+												<span class="answer">A</span>: Bill Bryson, Helen Garner, Paul Theroux, Susan Hill (her ghost stories), Christopher Hitchens, Alain de Botton, Sam Harris. 
+											</p>
+										</details>
+										<details>
+											<summary>Q: You taught yourself shorthand. Why did you decide, in the 21st century, to learn such a seemingly anachronistic skill?</summary>
+											<p>
+												<span class="answer">A</span>: Ever since I first grabbed a pencil in my chubby infant hand, I have thought of myself as a slow writer. (Slow with handwriting, that is. I&rsquo;m a pretty fast typist, though. I&rsquo;ve also been told by many people that I hold a pen &ldquo;in a funny way&rdquo;, although it looks perfectly normal to me.) I longed to have a hand that could speedily and legibly glide across the page, but I&rsquo;ve been condemned by fate to be a chain-dragging laggard, cursed with a slow and untidy scrawl.
+											</p>
+											<p>Then one day I was in Dymocks bookshop in Sydney, where saw a book titled 
+												<span class="title">Teach Yourself Pitman&rsquo;s New Era Shorthand</span>. I bought it without a second thought. It wasn&rsquo;t just the prospect of being able to speedily record words that intrigued me; the idea of being able to reproduce the beautiful geometric shapes of Pitman shorthand also fascinated me. It&rsquo;s filled with elegant curves and straight lines of full, half or double length. I became fascinated with the word statistics when rendered in shorthand form, which looks like a dragonfly. And the word showroom, with its languorous symmetrical curves, resembles the petals of a flower.
+											</p>
+											<p>I diligently practised the exercises in the book and became moderately proficient at it. My speed has never really been tested, although I know that I can write shorthand faster than I can write longhand. I&rsquo;m also fascinated by the possibilities of using shorthand as a secret script; it&rsquo;s gratifying to be able to write something and rest easy knowing that most people won&rsquo;t be able to decipher what I&rsquo;ve written, should I carelessly leave my words lying around.</p>
+											<p>There are many self-appointed pundits who declare that shorthand is totally useless and that digital voice recorders have rendered it obsolete. But there are still 
+												<em>millions</em> of people around the world who take notes by hand, either by necessity or by choice. They could all do their task much more quickly, though, if they could write shorthand. I recently had dealings with a couple of lawyers, and I noticed that they were taking notes &ndash; in longhand. If they knew shorthand they could make much more comprehensive notes. 
+											</p>
+											<p>I&rsquo;ve had stops and starts on while learning shorthand, but the one thing that prompted me to continue after a dispiriting layoff was a fantastic website &ndash; 
+												<a href="http://www.long-live-pitmans-shorthand.org.uk/" target="_blank"></a>Long Live Pitman&rsquo;s Shorthand &ndash; that is dedicated to propagating the word about the value of Pitman New Era shorthand. It&rsquo;s run by UK resident Beryl Pratt. This woman, who started to learn shorthand in the early 1970s, is an encyclopedia on the subject, and she has provided a huge range of resources on her site to help anyone who wants to maintain their shorthand skill or start learning it from scratch. 
+											</p>
+											<p>One of the problems I found while learning shorthand is the shortage of interesting text written in it. At the State Library of NSW you can find Robert Louis Stevenson&rsquo;s Treasure Island written in Pitman, but beyond that there isn&rsquo;t much surviving shorthand text. Instruction manuals on the subject can be pretty tedious, filled with stuff like &ldquo;Dear Mr Smith, Thank you for your letter of 3 February. We are in receipt of your order of 3000 widgets, which we assure you will be delivered by Wednesday 15 March ...&rdquo;.</p>
+											<p>But Beryl Pratt writes a blog on her website in shorthand, together with a longhand transcription underneath. She has been doing this since about 2012, and it&rsquo;s proved to be a great way to get practice at reading shorthand as well as writing it &ndash; and getting something more interesting to read than tedious business letters, which is the content of most of the old texts on the subject. She writes about shorthand itself and how you can make learning it easier, and she also turns her attention to current events &ndash; like the London Olympics back in 2012 &ndash; or excursions in and around London. It helps you to feel that shorthand is still alive, which would be a difficult state of mind to sustain if you could only read business letters written in a sober and tedious 1950s style. </p>
+										</details>
+										<section>
+											<!-- End of "FAQ-questions" -->
+										</div>
+										<!-- End of "FAQ-wrapper-1" -->
+									</section>
+									<!-- End of "FAQ" -->
+<!------------------ REVIEWS AND ARTICLES ------------------>
+									<section class="separator-image-reviews-and-articles" id="reviews">
+										<h1>
+											<span class="up">R</span>
+											<span class="down">E</span>
+											<span class="up">V</span>
+											<span class="down">I</span>
+											<span class="up">E</span>
+											<span class="down">W</span>
+											<span class="up">S</span>
+										</h1>
+										<h1>
+											<span class="up">&</span>
+										</h1>
+										<h1>
+											<span class="down">A</span>
+											<span class="up">R</span>
+											<span class="down">T</span>
+											<span class="up">I</span>
+											<span class="down">C</span>
+											<span class="up">L</span>
+											<span class="down">E</span>
+											<span class="up">S</span>
+										</h1>
+									</section>
+									<section class="reviews-and-articles">
+										<div class="reviews-and-articles-wrapper-1">
+											<div class="reviews-and-articles-intro">
+												<p>This is a selection of book reviews and articles that I have written while working at 
+													<span class="title">Good Reading</span> magazine. They range from an interview with a tetchy Jeffrey Archer (who bristled at my suggestion of any lesbian subtext in the first instalment of his 
+													<span class="title">Clifton Chronicles</span>)  to an interview with the almost pathologically hypergraphic American novelist Dean Koontz, who can dash off a book before breakfast.
+												</p>
+												<p>Other articles touch on whether it's acceptable to write notes or scribble in your own books, the practice of buying multiple copies of a book you love and giving them away to your friends and colleagues (a loathsome thing to do if you value your friends), a round-up of books from first-rate travel writers, and a survey of books banned on account of their lewd and lascivious content.</p>
+											</div>
+											<!----- End of "reviews and articles-intro" ----->
+											<div class="book-review-category-wrapper">
+												<section class="book-review-category-header">&nbsp;&nbsp;Articles&nbsp;&nbsp;</section>
+												<section class="book-review-title">
+													<a href="writing/articles/Behave_Yourself_24_26_GR_Oct_12_HIGH_RES_FINAL.pdf">Behave Yourself!</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/Books_by_the_billion_8_9_GR_May_12_SPREAD_TG.pdf">Books by the Billion</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/books_in_bulk_pp_22_23_May_2015_MISTAKE_NO_ITALS_IN_TITLE.pdf">Books in Bulk</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/British_comedian_bio_categorical_42_44_GR_Oct_13-SPREAD_TG.pdf">Best of British Chortlers</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/Censored_books_20_Oct_11_pp_20_22.pdf">Rubbish, Filth, Slime, Muck</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/Craig_Munro_Sept_2016_pp54_55.pdf">Word Wrangler</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/Dean_Koontz_iv_Dec_2010.pdf">Ghost Writer</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/E-book_vs_paper_book_16_17_GR_dec13_jan14_SPREAD_TG.pdf">E-book vs Paper book</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/Forged_from_Silver_Dollar_16_18_cover_story_v2.pdf">In the Shadow of Mao</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/In_Defence_of_Scribbling_20_21_GR_June_12_e.pdf">In Defence of Scribbling</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/In_Defence_of_Scribbling_responses_p45_lastword_nxt_month_b_TG.pdf">Responses to &lsquo;In Defence of Scribbling&rsquo;</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/Jean_Auel_10_11_GR_April_11_TG.pdf">Stone-Age Scribe – interview with Jean Auel</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/Jeffrey_Archer_10_11_GR_MARCH11_TG.pdf">Only Jeffrey Will Tell – interview with Jeffrey Archer</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/Michael_Robotham_10_11_GR_JUNE_11.pdf">The Explosive Besteller – interview with Michael Robotham</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/New_York_Nightmare_22_25_GR_MARCH_14_SPREAD_TG.pdf">New York Nightmare – interview with Alice Hoffman</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/Page_Is_Your_Passport_20_23_Nov_11.pdf">The Page Is Your Passport – round-up of outstanding travel writers</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/articles/Sulari_Gentill_28_29_GR_Nov_13_SPREAD_TG.pdf">The Story Magnet – interview with Sulari Gentill</a>
+												</section>
+											</div>
+											<div class="book-review-category-wrapper">
+												<section class="book-review-category-header">&nbsp;&nbsp;Fiction&nbsp;&nbsp;</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FICTION/Dolly_31_GR_dec_jan_13_d_TG.pdf">Dolly</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FICTION/Roald_Dahl_Short_Stories_39_GR_JUNE16.pdf">Roald Dahl: The Complete Short Stories Volume Two 1954–1988</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FICTION/Travelling_Bag_35_GR_DEC16_NEEDS_EXTRA_COMMA_IN_3RD_LAST_PARA,_LAST_LINE.pdf">The Travelling Bag and Other Ghostly Stories</a>
+												</section>
+											</div>
+											<div class="book-review-category-wrapper">
+												<section class="book-review-category-header">&nbsp;&nbsp;Food&nbsp;&nbsp;</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FOOD/Better_Brain_Food_53_GR_AUG_17.pdf">Better Brain Food</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FOOD/Does_Cooking_Matter_54_GR_MAY_17_%20ERROR_SHOULD%20BE%20SOME%20POINT%20NOT%20SOME%20POINTS.pdf">Does Cooking Matter?</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FOOD/Green_Kitchen_Smoothies_54_OCT16.pdf">Green Kitchen Smoothies</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FOOD/Hippie_Lane_55_GR_JULY_17_SECOND_REVIEW_ONLY.pdf">Hippie Lane</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FOOD/Plenish_64_cooking_books.pdf">Plenish</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FOOD/Smith_and_Daughters_53_GR_MAR_17.pdf">Smith & Daughters</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FOOD/Spiralise_Your_Vegetables_53_GR_APR_17%202.pdf">Spiralise Your Vegetables</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FOOD/Super_Green_Smoothies_66_GR_NOV15_HI_RES.pdf">Super Green Smoothies</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FOOD/Toxic_Oil_36_GR_May_13_HI_RES.pdf">Toxic Oil: Why vegetable oil will kill you and how to save yourself</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FOOD/Vegan_in_15_53_GR_MAY_17.pdf">Vegan in 15</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/FOOD/Vegan_Kitchen_and_The_Healthy_Convert_55_GR_JUNE_17.pdf">Vegan Kitchen: 130+ wholefood recipes for a plant-based diet</a>
+												</section>
+											</div>
+											<div class="book-review-category-wrapper">
+												<section class="book-review-category-header">&nbsp;&nbsp;General non-fiction&nbsp;&nbsp;</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/A_A_Gill_Is_Further_Away_review_39_Oct_11.pdf">A A Gill Is Further Away</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/A-Z_of_Modern_Manners_53_GR_DEC16.pdf">The A to Z of Modern Manners: A guide to behaving well</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/All_the_Buildings_in_Melbourne_54_AUG_16_HI_RES.pdf">All the Buildings in Melbourne</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/As_I_Was_Saying_by_Robert_Dessaix_35_WOM_d_TG.pdf">As I Was Saying</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Battle_Hymn_Tiger_Mother_40_41_GR_MAY_11.pdf">Battle Hymn of the Tiger Mother</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Fun_Home_51_OCT16.pdf">Fun Home</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Hand_to_Mouth_62_GR_APR_15.pdf">Hand to Mouth: The truth about being poor in a wealthy world</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Jane_Austen_62_GR_June_15.pdf">Jane Austen</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Little_History_of_Philosophy_38_GR_May_12_TG.pdf">A Little History of Philosophy</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Mortality_by_Christopher_Hitchens_34_GR_Oct_12_TG.pdf">Mortality</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Once_a_Jolly_Hangman_review_38_WOM_d_TG.pdf">Once a Jolly Hangman</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Only_in_New_York_62_GR_MAR-15.pdf">Only in New York</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Reading_Architecture_36_WOM_D_TG.pdf">Reading Architecture</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Reasons_to_Stay_Alive_64_GR_JULY_15.pdf">Reasons to Stay Alive</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Sam_Harris_The_Moral_Landscape_Review_40_GR_JUNE_11.pdf">The Moral Landscape</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Scorn_52_GR_FEB17.pdf">Scorn: The wittiest and wickedest insults in human history</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Silence_Your_Mind_37_GR_March_13_HI_RES.pdf">Silence Your Mind</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Tall_Man_37_GR_May_12_TG.pdf">The Tall Man: Death and life on Palm Island</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/True_Stories_by_Helen_Garner_14_15_GR_Oct_13_SPREAD_TG.pdf">True Stories: Selected non-fiction</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Very_Good_Lives_by_JK_Rowling_AND_Jane_Austen_62_GR_June_15.pdf">Very Good Lives: The fringe benefits of failure and the importance of imagination</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Whatever_It_Is_I_Dont_Like_It_41_Nov_11_TG.pdf">Whatever It Is, I Don't Like It</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/GENERAL-NON-FICTION/Yellow_Elephant_59_GR_FEB_14_TG.pdf">The Yellow Elephant</a>
+												</section>
+											</div>
+											<div class="book-review-category-wrapper">
+												<section class="book-review-category-header">&nbsp;&nbsp;Health&nbsp;&nbsp;</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/HEALTH/Calm_Secrets_to_Serenity_53_AUG_16.pdf">Calm: Secrets to serenity from the cultures of the world</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/HEALTH/Change_Your_Thinking_58_GR_Sept_13_TG.pdf">Change Your Thinking, 3rd edition</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/HEALTH/Fat_City_66_GR_MAR16_ NOTE_ERROR_IN_7TH_AND_6TH_LAST_LINES_THAT_WHICH.pdf">Fat City</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/HEALTH/How_Not_to_Die_64_GR_APR16.pdf">How Not to Die: Discover the foods scientifically proven to prevent and reverse disease</a>
+												</section>
+											</div>
+											<div class="book-review-category-wrapper">
+												<section class="book-review-category-header">&nbsp;&nbsp;Language + Writing&nbsp;&nbsp;</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/LANGUAGE_AND_WRITING/40_GR_Feb11_TG_Just_My_Type.pdf">Just My Type</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/LANGUAGE_AND_WRITING/500_Words_You_Should_Know_62_GR_Aug_13_LO_RES.pdf">500 Words You Should Know</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/LANGUAGE_AND_WRITING/Between_You_and_Me_62_GR_JULY_15.pdf">Between You and Me: Confessions of a comma queen</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/LANGUAGE_AND_WRITING/Big_Magic_by_Elizabeth_Gilbert_54_GR_JULY16.pdf">Big Magic</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/LANGUAGE_AND_WRITING/Fluent_in_3_Months_61_GR_June_15.pdf">Fluent in 3 Months: Tips and techniques to help you learn any language</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/LANGUAGE_AND_WRITING/Fucking_Apostrophes_53_GR_DEC16.pdf">Fucking Apostrophes: A guide to show you where you can stick them</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/LANGUAGE_AND_WRITING/How_to_Be_a_Writer_53_SEP_16.pdf">How to Be a Writer Who Smashes Deadlines, Crushes Editors and lives in a solid gold hovercraft</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/LANGUAGE_AND_WRITING/How_Writing_Works_54_GR_FEB17.pdf">How Writing Works: A field guide to effective writing</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/LANGUAGE_AND_WRITING/Language_books_36_WOM_b_PAGE_TG.pdf">The Story of English in 100 Words |  Planet Word | Help for Writers</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/LANGUAGE_AND_WRITING/Use_Your_Words_56_NOV16.pdf">Use Your Words: A myth-busting, no-fear approach to writing</a>
+												</section>
+											</div>
+											<div class="book-review-category-wrapper">
+												<section class="book-review-category-header">&nbsp;&nbsp;Photography&nbsp;&nbsp;</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/PHOTOGRAPHY/Capturing_the_World_53_GR_AUG_17%20copy.pdf">Capturing the World: Stories, tips and secrets from a life-time of travel photography</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/PHOTOGRAPHY/Decade_40_41_GR_MAY_11.pdf">Decade</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/PHOTOGRAPHY/Flash_Book_GR_DEC-18_47.pdf">The Flash Book</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/PHOTOGRAPHY/iPad_for_Photographers_16_readers_life1_c_TG.pdf">iPad for Photographers, 2nd edition</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/PHOTOGRAPHY/Photographers_Guide_to_Posing_GRDESIGN1712p056.pdf">The Photographer's Guide to Posing: Techniques to flatter everyone</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/PHOTOGRAPHY/Photography_books_62_wom_b_TG.pdf">Low Cost High Impact Photography and Shooting Yourself: Self-portraits with attitude</a>
+												</section>
+											</div>
+											<div class="book-review-category-wrapper">
+												<section class="book-review-category-header">&nbsp;&nbsp;Travel&nbsp;&nbsp;</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/Best_Things_in_Life_are_Free_54_GR_FEB17.pdf">The Best Things in Life are Free: The ultimate money-saving travel guide</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/Epic_Bike_Rides_of_the_World_52_SEP_16.pdf">Lonely Planet Epic Bike Rides of the World</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/How_to_Avoid_Being_Killed_in_a_War_Zone_review_41_GR_Sept_11.pdf">How to Avoid Being Killed in a War Zone</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/How_to_Pack_for_Any_Trip_52_GR_APR_17.pdf">Lonely Planet How to Pack for Any Trip</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/Last_Train_to_Zona_Verde_61_wom_a_TG.pdf">The Last Train to Zona Verde</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/Lonely_Planet_First_Words_59_GR_MAY_17.pdf">Lonely Planet First Words: Spanish | French | English</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/Lonely_Planet_Pop_Up_books_58_GR_JUNE16_HI_RES.pdf">Lonely Planet Pop-Up: London | New York | Paris</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/Lonely_Planets_Best_Ever_Travel_Tips_61_WOM_Travel.pdf">Lonely Planet's Best Ever Travel Tips</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/National_Parks_of_Europe_AND_%20Spotters_Guide_to_Film_Locations_56_GR_JULY_17.pdf">National Parks of Europe and A Spotter's Guide to Film (and TV) Locations</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/Not_for_Parents_Africa_69_GR_FEB_14_TG.pdf">Not-for-Parents: Africa</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/Road_to_Little_Dribbling_60_GR_FEB16_HI_RES.pdf">The Road to Little Dribbling</a>
+												</section>
+												<section class="book-review-title">
+													<a href="writing/book-reviews/TRAVEL/Travel_Writing_Guides_p24_Nov_11.pdf">Round-up of guides on how to become a travel writer</a>
+												</section>
+											</div>
+										</div>
+									</section>
+<!------------------ TESTIMONIALS ------------------>
+									<section class="separator-image-testimonials" id="testimonials">
+										<h1>
+											<span class="up">T</span>
+											<span class="up">E</span>
+											<span class="up">S</span>
+											<span class="up">T</span>
+											<span class="up">I</span>
+											<span class="up">M</span>
+											<span class="up">O</span>
+											<span class="up">N</span>
+											<span class="up">I</span>
+											<span class="up">A</span>
+											<span class="up">L</span>
+											<span class="up">S</span>
+										</h1>
+									</section>
+									<section class="testimonials">
+										<div class="testimonials-wrapper-1">
+											<div class="testimonials-intro">
+												<p>This is a short selection of testimonials from various authors and reviewers regarding my editing work.</p>
+											</div>
+											<!----- End of "testimonials-intro" ----->
+											<div class="indiv-test-wrapper">
+												<div class="testimonial">
+													<p>Tim is right up there among the very best editors and sub-editors I’ve worked with in 30-plus years as a journalist. I’ve been writing author interviews, book reviews and an occasional column for 
+														<span class="title">Good Reading</span> for a number of years now, and one of the most satisfying aspects of this job has been recognising the great care and consideration with which Tim treats every article I submit for publication. There’s a certain degree of pedantry required to be an excellent editor or sub-editor — getting every word and every sentence just right is not negotiable for those who excel in this role — but Tim manages to bring humanity and warmth to the task. If he has to query a particular word use of mine, or question the accuracy of information included in one of my stories, he does so tactfully and, more importantly, kindly. And, I must confess, he’s usually justified in raising the question.
+														<span class=testimonial-end-quote>”</span>
+													</p>
+													<div class="testimonial-attribution">– Maureen Eppen, journalist, 
+														<span class="title">The West Australian</span>
+													</div>
+												</div>
+											</div>
+											<div class="indiv-test-wrapper">
+												<div class="testimonial">
+													<p>Thank you for your feather-light edit.
+														<span class=testimonial-end-quote>”</span>
+													</p>
+													<div class="testimonial-attribution">– UK novelist Maggie Alderson</div>
+												</div>
+											</div>
+											<div class="indiv-test-wrapper">
+												<div class="testimonial">
+													<p>You’ve done an excellent job of editing and now it’s sharp and clear.
+														<span class=testimonial-end-quote>”</span>
+													</p>
+													<div class="testimonial-attribution">– Anastasia Gonis, freelance writer and reviewer</div>
+												</div>
+											</div>
+											<div class="indiv-test-wrapper">
+												<div class="testimonial">
+													<p>Thanks for your thoughtful edit – I really appreciate it.
+														<span class=testimonial-end-quote>”</span>
+													</p>
+													<div class="testimonial-attribution">– Australian novelist Julian Leatherdale</div>
+												</div>
+											</div>
+											<div class="indiv-test-wrapper">
+												<div class="testimonial">
+													<p>What a joy to be cleverly edited.
+														<span class=testimonial-end-quote>”</span>
+													</p>
+													<div class="testimonial-attribution">– Sue Woolfe, novelist and lecturer – suewoolfe.com.au</div>
+												</div>
+											</div>
+											<div class="indiv-test-wrapper">
+												<div class="testimonial">
+													<p>[We] very much appreciate the work you’ve put in re detailed corrections!
+														<span class=testimonial-end-quote>”</span>
+													</p>
+													<div class="testimonial-attribution">– Merry Lovell, Publicity, Images Publishing + Peleus Press, Melbourne</div>
+												</div>
+											</div>
+										</div>
+										<!----- End of "testimonials-wrapper-1" ----->
+									</section>
+									<!------------------ CONTACT  ------------------>
+									<section class="separator-image-contact" id="contact">
+										<h1>
+											<span class="up">C</span>
+											<span class="up">O</span>
+											<span class="up">N</span>
+											<span class="up">T</span>
+											<span class="up">A</span>
+											<span class="up">C</span>
+											<span class="up">T</span>
+										</h1>
+									</section>
+									<!-- End of separator-image-contact -->
+									<section class="contact">
+										<div class="contact-wrapper-1">
+                                            
+											<section class="contact-info">
+												<div class="contact-type"><span>Email</span></div>
+												<div class="contact-details">maxbrewer [at] yahoo.com.au</div>
+                                                <div class="contact-type"><span>Twitter</span></div>
+												<div class="contact-details"><span>maxbrewer</div>
+                                                    <div class="contact-type"><span>Instagram</span></div>
+                                                    <div class="contact-details"><span>maxbrewer</span></div>
+											</section>
+                                                
+                                                <img src="images/TG_logo_2018_v04.png" class="contact-logo" alt="TG logo">
+                                                
+										</div>
+										<!----- End of "contact-wrapper-1" ----->
+									</section>
+									<!-- End of contact -->
+                        
+                        
+                        
+									
+                                    
+                                  
+								</body>
+							</html>
+

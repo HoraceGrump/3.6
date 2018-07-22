@@ -1,0 +1,1698 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i);
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700,900");
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,900');
+
+
+
+@import url("//hello.myfonts.net/count/343cb5");
+
+  
+@font-face {font-family: 'RatherLoud';src: url('../fonts/Rather/343CB5_0_0.eot');src: url('../fonts/Rather/343CB5_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Rather/343CB5_0_0.woff2') format('woff2'),url('../fonts/Rather/343CB5_0_0.woff') format('woff'),url('../fonts/Rather/343CB5_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'RatherJazzy';src: url('../fonts/Rather/343CB5_1_0.eot');src: url('../fonts/Rather/343CB5_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Rather/343CB5_1_0.woff2') format('woff2'),url('../fonts/Rather/343CB5_1_0.woff') format('woff'),url('../fonts/Rather/343CB5_1_0.ttf') format('truetype');}
+ 
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+font-size: 1.6rem;
+}
+
+p {
+    color: black;
+}
+
+
+/**** PHONE – NAME and TAGLINE – no media queries *****/
+
+
+.second h1 {
+    font-family: RatherLoud;
+    font-size: 10rem;
+    text-shadow: .4rem .4rem 0 yellow, .6rem .6rem 0 white;
+    color: #F2AE2E;
+    -webkit-text-stroke: .3rem black;
+    
+}
+
+.second h2 {
+    font-family: RatherLoud;
+    font-size: 4.45rem;
+    text-shadow: 2px 2px 2px yellow, 4px 4px 0px white;
+    padding-top: 10rem;
+    -webkit-text-stroke: 1px #F2AE2E;
+    
+}
+
+
+.title {
+    font-style: italic;
+    
+}
+
+
+/**** TABLET  – NAME and TAGLINE – *****/
+
+@media screen and (min-width: 768px) {
+    
+.second h1 {
+    font-size: 17rem;
+    text-shadow: .3rem .3rem .3rem yellow, .6rem .6rem 0px white;
+    -webkit-text-stroke: .4rem black;
+    
+}
+ 
+    
+.second h2 {
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px yellow, 4px 4px 0px white;
+    padding-top: 10rem;
+    -webkit-text-stroke: 1px #F2AE2E;
+    
+}
+    
+    
+}
+
+
+/**** DESKTOP  – NAME and TAGLINE –  *****/
+
+@media screen and (min-width: 1030px) {
+    
+.second h1 {
+    font-size: 25rem;
+    text-shadow: .4rem .4rem 0 yellow, .6rem .6rem 0px white;
+    -webkit-text-stroke: .5rem black;
+    
+}
+
+    
+    .second h2 {
+    font-size: 7rem;
+    text-shadow: 2px 2px 2px yellow, 4px 4px 0px white;
+    padding-top: 10rem;
+    -webkit-text-stroke: 1px #F2AE2E;
+    
+}
+
+}
+
+
+
+/***** END OF FONTS *****/
+
+
+
+
+/**** PHONE – background for hero image – no media queries *****/
+
+.one {
+    
+    height: 100vh;
+    background: yellow;
+    background-image: url(../images/jeremy-bishop-262139_600_px_wide.jpg);
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-blend-mode: luminosity;
+    background-blend-mode: luminosity;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+    }
+
+
+/**** TABLET & DESKTOP background for hero image *****/
+
+@media screen and (min-width: 768px) {
+   
+    .one {
+    background: yellow;
+    background-image:url(../images/jeremy-bishop-262139-1100px_wide.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-blend-mode: luminosity;
+    background-blend-mode: luminosity;
+    
+}
+
+}
+
+
+
+
+
+
+
+
+.second {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    
+}
+
+
+
+   
+   .second {
+    display: flex;
+    
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   
+   
+   h1 {
+    font-family: RatherLoud;
+    font-size: 9rem;
+    text-shadow: .3rem .3rem 0 yellow, .5rem .5rem 0px white;
+    color: #F2AE2E;
+    -webkit-text-stroke: .4rem black;
+}
+   
+        
+       
+       h2 {
+    font-family: RatherLoud;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px yellow, 2px 2px 0px white;
+    padding-top: 8rem;
+    -webkit-text-stroke: 1px #F2AE2E;
+    
+}
+       
+        
+    
+    }
+    
+    
+    
+    
+}
+
+
+
+
+
+
+.two {
+    height: 75vh;
+    background: olive;
+    display: flex;
+    
+}
+
+.two-A {
+    flex: 2 1;
+    background: #F25C78;
+}
+
+.two-B {
+    flex: 1 1;
+    background: #D94A7E;
+}
+
+
+/* BOUNCING NAME*/
+
+
+.second h1 {
+    
+    -webkit-transform: translateY(800%);
+    transform: translateY(800%);
+    
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+    
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes bounce {
+  
+  
+0% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  
+  
+  
+  20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -120px, 0);
+    transform: translate3d(0, -120px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -60px, 0);
+    transform: translate3d(0, -60px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-16px,0);
+    transform: translate3d(0,-16px,0);
+  }
+}
+
+
+/* ANIMATED TAGLINE */
+
+.second > h2  {
+    background: transparent;
+    transform: translateX(-800%);
+    animation-name: editmove; 
+    animation-delay: 3.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+.editmove {
+  -webkit-animation-name: editmove;
+  animation-name: editmove;
+}
+
+
+@keyframes editmove {
+    
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(15px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+ /***** ABOUT*****/
+
+
+.about {
+    padding-top: 8rem;
+    /* This is a pattern from the Lea Verou pattern gallery. It results in a dark grey bg with little perforations in it. */
+    background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+}
+
+
+
+/**** This centres the About content and gives it a width, which is flexible. ****/
+
+.about-wrapper-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;  
+}
+
+
+
+/********** Styling for the heading of the About section, giving it a yellow bg and tilting it. **********/
+.about-wrapper-1 h1 {
+    font-family: 'RatherLoud', sans-serif;
+    font-size: 10rem;
+    color: #1D2827; /* very dark grey I found at www.thisistommy.com/work */
+    background-color: yellow;
+    padding: 4rem 2rem 6rem 2rem;
+    margin: 2.5rem 5rem 4rem 2rem;
+    align-self: center;
+    border-radius: 0rem;
+    transform: rotate(-10deg);
+    
+}
+
+
+/********** Styling for .about-blurb  **********/
+
+.about-blurb {
+    padding: 2rem;
+    margin-bottom: 10rem;
+    
+}
+
+/********** Styling for the para and lists of the About blurb **********/
+
+
+
+
+.about-blurb p, ul {
+    
+    font-family: Roboto;
+    font-size: 2.5rem;
+    color: yellow;
+    text-transform: none;
+    line-height: 1.6;
+}
+
+
+.about-blurb>p:first-child:first-letter { 
+  float: left; 
+  color: yellow; 
+  font-size: 14rem; 
+  line-height: 9rem; 
+  padding-top: 1rem; 
+  padding-right: 1.2rem; 
+  padding-left: 0rem; 
+  font-family: "Open Sans";
+    font-weight: 900;
+    text-shadow: .5rem .5rem #3F3F3F, .7rem .7rem rgba(255,255,0,1);
+
+
+}
+
+
+/********** Styling for list in the About blurb **********/
+
+.about-blurb ul {
+    margin-top: 2em;
+
+}
+  
+
+/********** Styling for any links – such as "expletive infixations" – in the About blurb. When hovered, font turns from yellow to v dark grey, but background turns yellow. **********/
+
+.about a:link {
+    color: yellow;
+    
+}
+
+.about a:visited {
+    color: yellow;    
+}
+
+.about a:hover {
+    color: #1D2827;
+    background: yellow;
+    
+}
+
+
+
+/********** Styling of bullet images in list in About section. Uses yellow arrows instead of bullets.  **********/
+
+.about ul li {
+    list-style-type: none;
+    background-image: url(../images/arrow_yellow.png);
+    background-position: -10px -10px;
+    background-repeat: no-repeat;
+    padding-left: 7rem;
+  
+    
+}
+
+
+/***** PHONE – SEPARATOR IMAGE FAQ *****/
+
+.separator-image-FAQ {
+    height: 70vh;
+    background-image: url(../images/alex-holyoake-60249-unsplash_600_px_wide.jpg); /**** Street art image of woman ****/
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-color: gold;
+    -webkit-background-blend-mode: luminosity; 
+    background-blend-mode: luminosity; /* Good option for yellow: luminosity, */
+    
+}
+
+
+/*** FAQ separator image was too narrow when in landscape on phone, hence this rule ***/
+@media screen and (max-width: 600px) (orientation:landscape) { 
+
+.separator-image-FAQ {
+    height: 75vh;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) { 
+
+.separator-image-FAQ {
+    background-image: url(../images/alex-holyoake-60249-unsplash_1100_px_wide.jpg); /**** Street art image of woman ****/
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-blend-mode: luminosity; 
+    background-blend-mode: luminosity;
+    
+    }
+
+}
+
+
+
+
+
+/***** FAQ*****/
+
+
+.separator-image-FAQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.separator-image-FAQ h1 {
+    font-family: 'RatherLoud', sans-serif;
+    font-size: 30rem;
+    color: #1D2827; /* very dark grey I found at www.thisistommy.com/work */
+    -webkit-text-stroke: 4px white;
+    text-shadow: 1.4rem 1.4rem 1.4rem black;
+    letter-spacing: -3rem;
+    transform: rotate(-5deg);
+    
+}
+
+
+.separator-image-FAQ .up {
+  display: inline-block;
+  animation-name: FAQ-upthing; 
+  animation-duration: 4s;
+    animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+    }
+
+
+@-webkit-.separator-image-FAQ .up {
+  -webkit-display: inline-block;
+  -webkit-animation-name: FAQ-upthing; 
+  -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+    }
+
+
+
+.separator-image-FAQ .down {
+  display: inline-block;
+  animation-name: FAQ-downthing;
+  animation-duration: 4s;
+animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  
+}
+
+
+@-webkit-.separator-image-FAQ .down {
+  -webkit-display: inline-block;
+  -webkit-animation-name: FAQ-downthing;
+  -webkit-animation-duration: 4s;
+-webkit-animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+  
+}
+
+
+
+@keyframes FAQ-upthing {
+  
+  0% {
+    transform: translateY(0rem);
+  }
+
+  
+  50% {
+    transform: translateY(-1.5rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+
+}
+
+
+@-webkit-keyframes FAQ-upthing {
+  
+  0% {
+    -webkit-transform: translateY(0rem);
+  }
+
+  
+  50% {
+    -webkit-transform: translateY(-1.5rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(0rem);
+  }
+
+}
+
+
+
+@keyframes FAQ-downthing {
+  
+  0% {
+    transform: translateY(0rem);
+  }
+
+  
+  50% {
+    transform: translateY(1.5rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+
+}
+
+
+@-webkit-keyframes FAQ-downthing {
+  
+  0% {
+    -webkit-transform: translateY(0rem);
+  }
+
+  
+  50% {
+    -webkit-transform: translateY(1.5rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(0rem);
+  }
+
+}
+
+
+
+
+.FAQ {
+  
+    background-color: antiquewhite;
+    font-family: Roboto;
+
+}
+
+
+.FAQ-wrapper-1 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 6rem 3rem 3rem 3rem;
+    background-color: antiquewhite;
+    line-height: 3.5em;
+    
+}
+
+
+
+/********** Gets rid of annoying blue outline around summary items in FAQ **********/
+
+summary{
+  outline:none;
+    margin-bottom: 2rem;
+
+}
+
+.FAQ {
+    padding-bottom: 3rem;
+    
+}
+
+.FAQ details {
+    font-family: Roboto;
+    font-size: 2.5rem; /***** Same size as for ".about-blurb p" *****/
+    line-height: 1.6;
+}
+
+
+
+/***** This is the styling for the questions in the FAQ *****/
+
+.FAQ details summary {
+    font-weight: bold;
+    background-color: darkslategray; /* very dark grey I found at www.thisistommy.com/work */
+    color: yellow;
+    padding: 1rem 1rem .75rem 7rem;
+    border-radius: .6rem;
+ 
+}
+
+
+.FAQ details summary {
+    text-indent: -6rem;  
+    
+}
+
+.FAQ-questions details:nth-child(odd) summary {
+    background-color: lemonchiffon;
+    color: #1D2827;
+    border: .5px solid #1D2827;
+    }
+
+.answer {
+    font-weight: 700;
+    
+}
+
+
+/********** This stops links in the FAQ section from turning an ugly purple if they've been visited. **********/
+
+
+.FAQ details a:visited {
+    
+    color: black;
+}
+
+
+.FAQ em {
+    font-style: italic;
+}
+
+
+
+
+
+/** Indents all paras after the first para by 2em **/
+.FAQ-questions details p {
+    
+    text-indent: 3rem;
+}
+
+/** Ensures that there is NOT indent on FIRST paras in this section **/
+
+.FAQ-questions details p:first-of-type {
+    
+    text-indent: 0rem;
+}
+
+
+/** Puts some space between end of an answer and the start of the next question **/
+.FAQ-questions details p:last-of-type {
+    
+    margin-bottom: 4rem;
+}
+
+
+/********** REVIEWS & ARTICLES **********/
+
+
+/****  PHONE (NO MEDIA QUERIES) – REVIEWS, BACKGROUND IMAGE ****/
+
+.separator-image-reviews-and-articles {
+    height: 50vh;
+    background-image: url(../images/paul-murphy-508862-unsplash_600_px_wide.jpg); /********** Graffiti tunnel **********/
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: gold;
+    
+
+    background-blend-mode: luminosity; /* Good options for yellow: luminosity, */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/****  TABLET MEDIA QUERIES – REVIEWS, BACKGROUND IMAGE ****/
+    @media screen and (min-width:768px) {
+
+    .separator-image-reviews-and-articles {
+    background-image: url(../images/paul-murphy-508862-unsplash_1100_px_wide.jpg); /********** Graffiti tunnel **********/
+    background-position: center center;
+    background-color: chartreuse;
+    background-blend-mode: luminosity; /* Good options for yellow: luminosity, */
+        
+        }
+}
+
+/****  DESKTOP MEDIA QUERIES – REVIEWS, BACKGROUND IMAGE ****/
+@media screen and (min-width:1100px) {
+
+    .separator-image-reviews-and-articles {
+    background-image: url(../images/paul-murphy-508862-unsplash_2550_px_wide.jpg); /********** Graffiti tunnel **********/
+    background-position: center center;
+    background-color: yellow;
+    background-blend-mode: luminosity; /* Good options for yellow: luminosity, */
+        
+        }
+}
+    
+/****  PHONE (NO MEDIA QUERIES) – REVIEWS, H1 ****/  
+    
+
+.separator-image-reviews-and-articles h1 {
+    font-family: 'RatherLoud', sans-serif;
+    font-size: 10rem;
+    color: #ffffff;
+    -webkit-text-stroke: .4rem black;
+    text-stroke: .4rem black; /***** As of 11-04-2018, it seemed that the non-vendor prefix version didn't work. Seems that only the vendor-prefix version works. But I'll leave this in here anyway. *****/
+    text-shadow: .75rem .75rem .4rem yellow;
+    letter-spacing: -1.0rem;
+    transform: rotate(0deg);
+}
+
+/****  TABLET MEDIA QUERIES – REVIEWS, H1 ****/
+
+ @media screen and (min-width:768px) {
+     
+     .separator-image-reviews-and-articles h1 {
+     font-size: 17rem;
+    letter-spacing: -1.75rem;
+     }
+        
+}
+
+
+
+
+/****  DESKTOP MEDIA QUERIES – REVIEWS, H1 ****/
+
+@media screen and (min-width:1100px) {
+    
+    .separator-image-reviews-and-articles {
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+    
+    
+    .separator-image-reviews-and-articles h1 {
+    font-size: 20rem;
+    letter-spacing: -2rem;
+        text-shadow: .75rem .75rem .4rem yellow;
+         transform: rotate(-4deg);
+       
+     }
+        
+
+
+    /**** Puts separation between the ampersand and the two words on either side of it in "Reviews & Articles" ****/
+
+    .separator-image-reviews-and-articles h1:nth-child(2) {
+
+    padding-right: 6rem;
+    padding-left: 6rem;
+
+
+}
+    
+}
+
+
+.separator-image-reviews-and-articles .up {
+  display: inline-block;
+  animation-name: reviews-and-articles-upthing; 
+  animation-duration: 4s;
+    animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+    }
+
+
+.separator-image-reviews-and-articles .down {
+  display: inline-block;
+  animation-name: reviews-and-articles-downthing;
+  animation-duration: 4s;
+    animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes reviews-and-articles-upthing {
+  
+  0% {
+    transform: translateY(0rem);
+  }
+
+  
+  50% {
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+
+}
+
+
+@keyframes reviews-and-articles-downthing {
+  
+  0% {
+    transform: translateY(0rem);
+  }
+
+  
+  50% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+
+}
+
+/********** REVIEWS & ARTICLES **********/
+
+.reviews-and-articles {
+  
+    background-color: #3F3F3F;
+    min-height: 50vh;
+
+}
+
+
+
+
+.reviews-and-articles-wrapper-1 {
+
+    
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 6rem 3rem 3rem 3rem;
+
+    background-color: #3F3F3F;
+    
+    font-family: Roboto;
+    font-size: 2.5rem;
+    color: white;
+    line-height: 1.6em;
+    
+}
+
+
+.reviews-and-articles-intro {
+    margin-bottom: 6rem;
+    
+}
+
+.reviews-and-articles-intro>p:first-child:first-letter { 
+  float: left; 
+  color: yellow; 
+  font-size: 14rem; 
+  line-height: 9rem; 
+  padding-top: 1rem; 
+  padding-right: 1.2rem; 
+  padding-left: 0rem; 
+  font-family: "Open Sans";
+    font-weight: 900;
+    text-shadow: .5rem .5rem #3F3F3F, .7rem .7rem rgba(255,255,0,1);
+
+
+}
+
+
+.reviews-and-articles-intro p {
+    
+    color: white;
+    
+}
+
+
+/** Indents all paras after the first para by 3em **/
+.reviews-and-articles-intro p {
+    
+    text-indent: 3rem;
+}
+
+/** Ensures that there is NOT indent on the FIRST para in this section **/
+
+.reviews-and-articles-intro  p:first-of-type {
+    
+    text-indent: 0rem;
+}
+
+/** This makes the first letter, the drop cap, of the Reviews and Articles intro turn red when the whole first para is hovered on. It's a bit annoying and doesnt' look so great, so I've commented it out for now.
+
+.reviews-and-articles-intro>p:hover:first-child:first-letter {
+    color: red;
+
+}
+
+**/
+
+section.book-review-category-header {
+    color: yellow;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.5;
+    background-color: ;
+    margin-bottom: 2rem;
+    border: .5rem solid yellow;
+   
+}
+
+
+.book-review-category-wrapper {
+    margin-bottom: 4rem;   
+}
+
+
+.reviews-and-articles-wrapper-1 a {
+    text-decoration: none;
+    /**** Next two lines ensure that the text doesn't bump right up against edges of background. ****/
+  
+    padding-right: .5em;
+    
+    
+    
+}
+
+.reviews-and-articles-wrapper-1 a:link {
+    color: white;
+    
+}
+
+.reviews-and-articles-wrapper-1 a:visited {
+    color: white;    
+}
+
+.reviews-and-articles-wrapper-1 a:hover {
+    color: #1D2827;
+    background-color: yellow;
+}
+    
+.reviews-and-articles-wrapper-1 a:active {
+    color: #1D2827;
+    background-color: yellow;
+}
+
+
+/**********   TESTIMONIALS **********/
+
+.separator-image-testimonials {
+    height: 60vh;
+    background-image: url(../images/brad-neathery-258926-unsplash-OPTIMISED.jpg); 
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: darkorange;
+    background-blend-mode: luminosity; /* Good options for yellow: luminosity, */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.separator-image-testimonials h1 {
+    font-family: 'RatherLoud', sans-serif;
+    font-size: 9.5rem;
+    color: darkorange;
+    -webkit-text-stroke: .2rem black;
+    text-stroke: .2rem black; /***** As of 11-04-2018, it seemed that the non-vendor prefix version didn't work. Seems that only the vendor-prefix version works. But I'll leave this in here anyway. *****/
+    text-shadow: .75rem .75rem .4rem white;
+    letter-spacing: -1rem;
+    transform: rotate(0deg);
+}
+
+
+/****  TABLET MEDIA QUERIES – TESTIMONIALS, H1 ****/
+@media screen and (min-width:768px) {
+     
+     .separator-image-testimonials h1 {
+     font-size: 17rem;
+    letter-spacing: -1.75rem;
+    -webkit-text-stroke: .3rem black;
+    text-stroke: .3rem black;
+     }
+        
+}
+
+/****  DESKTOP MEDIA QUERIES – TESTIMONIALS, H1 ****/
+
+@media screen and (min-width:1100px) {
+        
+    .separator-image-testimonials h1 {
+    font-size: 20rem;
+    letter-spacing: -2rem;
+       
+     }
+
+}
+
+.separator-image-testimonials .up {
+  display: inline-block;
+  animation-name: reviews-and-articles-upthing; 
+  animation-duration: 2.4s;
+    animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+    }
+
+.separator-image-testimonials .up:nth-child(1) {
+ animation-delay: 0.2s;
+}
+
+
+.separator-image-testimonials .up:nth-child(2) {
+ animation-delay: 0.4s;   
+}
+
+.separator-image-testimonials .up:nth-child(3) {
+ animation-delay: 0.6s;   
+}
+
+.separator-image-testimonials .up:nth-child(4) {
+ animation-delay: 0.8s;   
+}
+
+.separator-image-testimonials .up:nth-child(5) {
+ animation-delay: 1.0s;   
+}
+
+.separator-image-testimonials .up:nth-child(6) {
+ animation-delay: 1.2s;   
+}
+
+.separator-image-testimonials .up:nth-child(7) {
+ animation-delay: 1.4s;   
+}
+
+.separator-image-testimonials .up:nth-child(8) {
+ animation-delay: 1.6s;   
+}
+
+.separator-image-testimonials .up:nth-child(9) {
+ animation-delay: 1.8s;   
+}
+
+.separator-image-testimonials .up:nth-child(10) {
+ animation-delay: 2.0s;   
+}
+
+.separator-image-testimonials .up:nth-child(11) {
+ animation-delay: 2.2s;   
+}
+
+.separator-image-testimonials .up:nth-child(12) {
+ animation-delay: 2.4s;   
+}
+
+
+@keyframes reviews-and-articles-upthing {
+  
+  0% {
+    transform: translateY(0rem);
+  }
+
+  
+  50% {
+    transform: translateY(-1.5rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+
+}
+
+.testimonials {
+     min-height: 50vh;
+    
+    /**** These next 7 lines are based on Lea Verou's patterns gallery ****/
+
+    background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#4E4E4E;
+background-size:16px 16px;
+}
+
+
+.testimonials-wrapper-1 {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 6rem 3rem 3rem 5rem;
+    
+    font-family: Roboto;
+    font-size: 2.5rem;
+    color: yellow;
+    font-weight: 400;
+    line-height: 1.6em;
+    
+}
+
+        
+}
+
+
+
+.testimonials-intro {
+    
+    margin-bottom: 6rem;
+    
+}
+
+
+
+
+.testimonials-intro p {
+    color: white;
+}
+
+
+.testimonials-intro>p:first-child:first-letter { 
+  float: left; 
+  color: yellow; 
+  font-size: 14rem; 
+  line-height: 9rem; 
+  padding-top: 1rem; 
+  padding-right: 1.2rem; 
+  padding-left: 0rem; 
+  font-family: "Open Sans";
+    font-weight: 900;
+    text-shadow: .5rem .5rem #3F3F3F, .7rem .7rem rgba(255,255,0,1);
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    background-color: ; /* Insert pink when testing*/
+    padding-left: 0rem;
+    padding-right: 0rem;
+    
+}
+
+.testimonial>p {
+    
+    align-items: flex-start;
+    padding: 0rem 0rem 0rem 2.5rem;
+    margin: 2rem 0rem 2rem 0;
+    color: white;
+    background-color: ; /* Insert aqua when testing*/
+    
+     
+}
+
+.testimonial-attribution {
+    justify-content: flex-end;
+    align-self: flex-end;
+    color: white;
+    background-color: ; /*** Insert yellow when testing ****/
+    margin-top: 0rem;
+    padding: 0 3rem 0 1rem;
+    margin: 4rem 0 0 0;
+    
+}
+
+
+
+
+/* Use text-decoration to underline attributions up to 927 px, then use border-bottom from 928px onwards 
+
+@media screen and (max-width: 927px) {
+    
+    .testimonial-attribution {
+        text-decoration: underline dotted yellow;
+    }
+
+    }
+
+@media screen and (min-width: 928px) {
+    
+    .testimonial-attribution {
+        border-bottom: 6px dotted yellow;
+    }
+
+    }
+
+
+****/
+
+.testimonial::before { 
+  content: "“";
+  font-family: Georgia;
+  font-size: 1000%;
+  position: relative;
+    top: 10rem;
+    left: -3rem;
+  color: rgba(255,255,0,0.7);
+  
+   margin-right: 0.1rem;
+    margin-top: 6rem;
+}
+
+
+    @media screen and (min-width: 768px) {
+        
+        .testimonial::before {
+            top: 8rem;
+    
+}
+
+
+.testimonial-end-quote {
+    font-family: Georgia;
+    font-size: 3rem;
+    color: yellow;
+    position: relative;
+    top: 0rem;
+    left: 0.5rem;
+}
+
+}
+   
+
+.indiv-test-wrapper {
+    border-bottom: 6px dotted yellow;
+}
+
+
+/**** I have no idea why I have to use the SECOND nth-of-type for this to work. To my eye it should be the FIRST nth-of-type. It's the first indiv-test-wrapper that I want to target   ****/
+.indiv-test-wrapper:nth-of-type(2) {
+    border-top: 6px dotted yellow;
+    margin-top: 8rem;
+   
+    
+}
+
+
+/**** Same applies here as in comment above; I want to target the 6th .indiv-test-wrapper, but I have to target the 7th to get the 6th! Doesn't make sense to me ****/
+.indiv-test-wrapper:nth-of-type(7) {
+    border-bottom: none;
+}
+
+
+
+/**********   CONTACT – SEPARATOR IMAGE**********/
+
+.separator-image-contact {
+    height: 60vh;
+    background-image: url(../images/alex-iby-628881-unsplash_600_px_wide.jpg); 
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: darkorange;
+    background-blend-mode: luminosity; /* Good options for yellow: luminosity, */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/****  TABLET MEDIA QUERIES – CONTACT, BACKGROUND IMAGE ****/
+    @media screen and (min-width:768px) {
+
+    .separator-image-contact {
+    background-image: url(../images/alex-iby-628881-unsplash-1100_px_wide.jpg); /********** woman outstretching hand **********/
+    background-position: center center;
+    background-color: darkorange;
+    background-blend-mode: luminosity; 
+        
+        }
+}
+
+/****  DESKTOP MEDIA QUERIES – CONTACT, BACKGROUND IMAGE ****/
+
+@media screen and (min-width:1100px) {
+
+    .separator-image-contact {
+    background-image: url(../images/alex-iby-628881-unsplash_2550_px_wide.jpg); /********** woman outstretching hand **********/
+    background-position: center center;
+    background-color: darkorange;
+    background-blend-mode: luminosity; 
+        
+        }
+}
+
+
+.separator-image-contact h1 {
+    font-family: 'RatherLoud', sans-serif;
+    font-size: 9.5rem;
+    color: darkorange;
+    -webkit-text-stroke: .3rem black;
+    text-stroke: .3rem black; /***** As of 11-04-2018, it seemed that the non-vendor prefix version didn't work. Seems that only the vendor-prefix version works. But I'll leave this in here anyway. *****/
+    text-shadow: .5rem .5rem .4rem white;
+    letter-spacing: -1rem;
+    transform: rotate(0deg);
+}
+
+
+
+/****  TABLET MEDIA QUERIES – CONTACT, H1 ****/
+
+@media screen and (min-width:768px) {
+     
+    .separator-image-contact h1 {
+    font-size: 17rem;
+    text-shadow: .6rem .6rem .4rem white;
+    letter-spacing: -1.75rem;
+    -webkit-text-stroke: .3rem black;
+    text-stroke: .3rem black;
+     }
+        
+}
+
+/****  DESKTOP MEDIA QUERIES – CONTACT, H1 ****/
+
+@media screen and (min-width:1100px) {
+        
+    .separator-image-contact h1 {
+    font-size: 20rem;
+    text-shadow: .70rem .70rem .4rem white;
+    letter-spacing: -2rem;
+        
+       
+     }
+
+}
+
+/**********   CONTACT **********/
+      
+.contact {
+    background-color: #1D2827; /* very dark grey I found at www.thisistommy.com/work */ 
+    
+}
+
+      .contact-wrapper-1 {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: Roboto;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8rem;
+}
+
+
+.contact-info {
+    font-size: 90%;
+    background: ;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 2.5rem 0;
+    color: yellow;
+}
+
+.contact-type {
+    color: #1D2827; /* very dark grey I found at www.thisistommy.com/work */
+    font-weight: bold;
+
+}
+
+.contact-type span {
+    background: yellow;
+    padding: 0 .5rem;
+}
+
+.contact-details {
+    border-bottom: 1px solid yellow;
+    
+}
+
+img {
+    width: 350px;
+}
+
+@media screen and (min-width: 700px) {
+    
+   
+    
+    .contact-type {
+        padding-top: 3rem;
+        
+    }
+  
+    .contact-info {
+    font-size: 90%;
+}
+    
+    .contact-wrapper-1 {
+        
+        flex-direction: row;
+    }
+    
+    img {
+        order: 1;
+        margin-top: 2rem;
+        margin-left: 5rem;
+        
+      
+      
+    }
+    
+    .contact-info {
+        order: 2;
+        margin-left: 15rem;
+        
+    }
+    
+    
+}
+
+
+
+    
+    /**********   NAVIGATION **********/
+    
+  
+  
+
+
+
+.nav {
+  display: block;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+    font-family: Roboto;
+    font-size: 2rem;
+}
+
+@media (max-width: 896px) {
+  .nav {
+width: 100vw;
+}
+}
+
+.nav__toggle {
+  opacity: 0;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  z-index: 1;
+}
+
+.nav__button {
+  cursor: pointer;
+  display: block;
+  height: 1.5rem;
+  padding: 2px 0;
+  pointer-events: auto;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  width: 1.5rem;
+  z-index: 3;
+}
+
+.nav__button-part {
+  background-color: white;
+  display: block;
+  height: 0.25rem;
+  position: relative;
+  transform-origin: 0;
+  transition: transform 0.3s ease-in-out 0.3s, opacity 0.2s ease-in-out 0.4s, background-color 0.2s ease-in-out 0.2s;
+  width: 1.5rem;
+  will-change: transform, opacity, background-color;
+}
+.nav__button-part + .nav__button-part {
+  margin-top: 0.25rem;
+}
+.nav__button-part:first-child {
+  transform-origin: 0 0;
+}
+.nav__button-part:last-child {
+  transform-origin: 0 100%;
+}
+.nav__toggle:checked ~ .nav__button .nav__button-part {
+  background-color: black;
+  opacity: 1;
+  transform: rotate(45deg);
+}
+.nav__toggle:checked ~ .nav__button .nav__button-part:nth-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.nav__toggle:checked ~ .nav__button .nav__button-part:nth-child(3) {
+  opacity: 1;
+  transform: rotate(-45deg);
+}
+
+.nav__items-container {
+  max-width: 25rem;
+  padding: 1rem;
+  pointer-events: auto;
+  transform: translateY(-100%);
+  transform-origin: 0;
+  transition: transform 0.5s cubic-bezier(0.75, 0.2, 0.1, 1);
+  width: 100vw;
+  will-change: transform;
+padding-left: 0;
+  margin-left: 0;
+}
+
+
+@media (min-width: 56.25rem) {
+  .nav__items-container {
+    max-width: none;
+    width: auto;
+    
+  }
+}
+.nav__toggle:checked ~ .nav__items-container {
+  transform: translateY(0);
+}
+
+.nav__list {
+  background: white;
+  border-radius: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  list-style-type: none;
+  margin: 0;
+  padding: 3.5rem 0 2rem;
+  padding-left: 0;
+  margin-left: 0;
+align-items: center; /** TG ADDITION: This centres the text when the browser is narrow and the items are displayed in column format **/
+  
+}
+
+/** This next block makes the nav switch from its native flex-direction of “column” to “row” once the width exceeds 56.25rem **/
+
+@media (min-width: 896px) {
+  .nav__list {
+    flex-direction: row;
+    height: 3.5rem;
+    padding: 0 4rem 0 2rem;
+  }
+}
+
+
+@media (max-width: 897px) {
+  .nav__list {
+width: 100vw;
+  }
+}
+
+
+
+
+.nav__link {
+  align-items: center;
+  color: black;
+  display: flex;
+  height: 3.5rem;
+  padding: 0 2rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  will-change: color;
+  
+}
+@media (min-width: 56.25rem) {
+  .nav__link {
+    padding: 0 1.5rem;
+  }
+}
+.nav__link:hover, .nav__link:active, .nav__link:focus {
+  color: #9D50BB;
+}
+
