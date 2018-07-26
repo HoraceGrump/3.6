@@ -8,21 +8,32 @@
 				<link rel="stylesheet" href="css/global.css">
 					<!-- This is the link to an external style sheet -->
 					<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
-        
-                    <script>
-                        
-                        $(document).ready(function(){
-  $('.nav__item').on('click', function(){
-    $('#nav_toggle').prop('checked', !$('#nav_toggle').prop('checked'));
-  });
-});
-        
-                    </script>
-        
-        
+        	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+          <script>
+          	// wait for the page to be 'ready';
+            $(document).ready(function(){
+            	// when the #nav_toggle is clicked run this function
+            	$('#nav_toggle').on('click', function () {
+            		// we need to wait for the next event loop because jQuery is silly
+            		setTimeout(function () {
+            			// create an event listener that will close the menu when it is clicked
+            			$('body').on('click.nav', function () {
+            				// untick the menu checkbox
+            				$('#nav_toggle').prop('checked', false);
+
+            				// tidy up the event listener
+										$('body').off('click.nav');
+	            		}),
+	            		1
+	            	});
+            	});
+						});
+          </script>
+
+
 					</head>
 					<body>
-                        
+
                         <!-- NAVIGATION -->
           <div class="nav">
   <input class="nav__toggle" type="checkbox" id="nav_toggle">
@@ -42,12 +53,12 @@
     </ul>
   </nav>
 </div>
-                        
-                        
+
+
                         <!-- END OF NAVIGATION -->
-                        
-                       
-                       
+
+
+
 						<section class="one" id="home">
 							<div class="second">
 								<h1>Max Brewer</h1>
@@ -55,14 +66,14 @@
 									<h2>editing &middot; writing &middot; wordsmithery </h2>
 								</div>
 							</section>
-							<!-- End of "one" --> 
+							<!-- End of "one" -->
                         <!-- ---------------- ABOUT---------------- -->
 							<section class="about" id="about">
 								<div class="about-wrapper-1">
 									<h1>About</h1>
 									<section class="about-blurb">
-										<p>I am an editor and writer who has worked for over seven years as deputy editor of 
-											<span class="title">Good Words</span>, Australia&rsquo;s only magazine about books and reading pitched at the general reader. I am dedicated to clear expression in language, and I enjoy helping other writers to express themselves more clearly. Your written words don&rsquo;t have to be pompous and obscure to make an impact, but they should get your message across. Editing does, to some extent, involve following what might seem like persnickety rules, but those rules can be broken. The trick is to ensure that you break them consciously and not because of ignorance.  Being a good editor requires constant education, whether that&rsquo;s in the form of formal courses or a program of self-administered instruction. I read Strunk and White&rsquo;s 
+										<p>I am an editor and writer who has worked for over seven years as deputy editor of
+											<span class="title">Good Words</span>, Australia&rsquo;s only magazine about books and reading pitched at the general reader. I am dedicated to clear expression in language, and I enjoy helping other writers to express themselves more clearly. Your written words don&rsquo;t have to be pompous and obscure to make an impact, but they should get your message across. Editing does, to some extent, involve following what might seem like persnickety rules, but those rules can be broken. The trick is to ensure that you break them consciously and not because of ignorance.  Being a good editor requires constant education, whether that&rsquo;s in the form of formal courses or a program of self-administered instruction. I read Strunk and White&rsquo;s
 											<span class="title">The Elements of Style</span> every couple of years, get new  I am also deeply interested in the lost art of rhetoric and the effect it can have on improving ...
 										</p>
 										<p>Things I&rsquo;m interested in:</p>
@@ -74,8 +85,8 @@
 											<li>taking photos with a vintage model (2007) digital camera and using off-camera flash</li>
 											<li>world geography and learning more about our planet (billionaires like Sir Richard Branson can have outer space travel all to themselves ... I&rsquo;m so not interested in it while there's still so much to discover here on Planet Earth.)</li>
 											<li>watching old TV series long after they were first released (
-												<span class="title">The Sopranos</span>, 
-												<span class="title">Nurse Jackie</span>, 
+												<span class="title">The Sopranos</span>,
+												<span class="title">Nurse Jackie</span>,
 												<span class="title">Downton Abbey</span>) ... I like to let the initial kerfuffle fade away and check out if they still stand the test of time several years after their initial release
 											</li>
 											<li>urban farming</li>
@@ -101,50 +112,50 @@
 										<details>
 											<summary>Q: You&rsquo;re primarily an editor and writer. What prompted you to teach yourself how to create a website from scratch – without Wordpress, Wix or similar template options?</summary>
 											<p>
-												<span class="answer">A</span>: The first thing you should know is that I am so 
-												<em>not</em> the stereotypical tech-head who revels in analysing long lines of code. 
+												<span class="answer">A</span>: The first thing you should know is that I am so
+												<em>not</em> the stereotypical tech-head who revels in analysing long lines of code.
 											</p>
 											<p>My ability to use HTML and CSS happened by accident. </p>
-											<p>I was working at a bookshop in Sydney, where a colleague showed me his copy of a book titled 
+											<p>I was working at a bookshop in Sydney, where a colleague showed me his copy of a book titled
 												<span class="title">
 													<a href="https://www.amazon.com/Head-First-HTML-CSS-Standards-Based/dp/0596159900/ref=sr_1_1?ie=UTF8&qid=1522206046&sr=8-1&keywords=head+first+html" target="_blank">Head First HTML and CSS: A Learner&rsquo;s Guide to Creating Standards-Based Web Pages</a>
 												</span> by Elisabeth Robson. This book was so different from other books about computers and web technology. It deliberately incorporated many different principles of learning &ndash; such as overlearning and using images and diagrams to reinforce lessons &ndash; to ensure that the ideas taught in the book stay firmly in the reader&rsquo;s mind.
 											</p>
 											<p>The text and images are surrounded by a lot of white space &ndash; which does unfortunately increase the size of the book &ndash; but the payoff is that the content has a spacious feel about it and it never feels crammed in or overwhelming. I don&rsquo;t mind having to deal with a hefty book if it means that I&rsquo;m going to understand the content &ndash; which is not something you can say about a lot of web technology books. Many of them fail to keep the reader&rsquo;s needs uppermost in their priorities, and as a result they are poorly written and incomprehensible in large sections.</p>
-											<p>So I bought my own copy of 
+											<p>So I bought my own copy of
 												<span class="title">Head First HTML and CSS</span> and I&rsquo;ve never looked back. Since then I&rsquo;ve been able to understand more complex books on the subject, but the really badly written web technology books are still beyond me! Only a true geek could penetrate their mysteries and emerge enlightened.
 											</p>
-											<p>I just love this book. I&rsquo;d always wanted to create a website for myself from scratch, largely because I can&rsquo;t stand the cookie-cutter look of websites based on WordPress, Wix and other sites. Regardless of how many templates they have, they all look so boringly generic, as if they were created from a template &ndash; which they were. I wanted to have as much control as possible over the look of my site, and although I&rsquo;ve had frustrating moments in trying to get everything working (as does every web developer, even the expert ones), it was worth it. This was the first book I&rsquo;d ever seen that made me think that a regular person &ndash; who didn&rsquo;t guzzle six-packs of Red Bull and play online games all day &ndash; might have a chance at learning this stuff. This is true of many of the books in the 
-												<span class="title">Head First</span> series of web technology books. One more thing: No, I&rsquo;m not getting any sponsorship or other kind of payment from O&rsquo;Reilly Media, the publisher of the 
-												<span class="title">Head First</span> books; I just think they are geniuses at making complex subjects relatively easy to understand. 
+											<p>I just love this book. I&rsquo;d always wanted to create a website for myself from scratch, largely because I can&rsquo;t stand the cookie-cutter look of websites based on WordPress, Wix and other sites. Regardless of how many templates they have, they all look so boringly generic, as if they were created from a template &ndash; which they were. I wanted to have as much control as possible over the look of my site, and although I&rsquo;ve had frustrating moments in trying to get everything working (as does every web developer, even the expert ones), it was worth it. This was the first book I&rsquo;d ever seen that made me think that a regular person &ndash; who didn&rsquo;t guzzle six-packs of Red Bull and play online games all day &ndash; might have a chance at learning this stuff. This is true of many of the books in the
+												<span class="title">Head First</span> series of web technology books. One more thing: No, I&rsquo;m not getting any sponsorship or other kind of payment from O&rsquo;Reilly Media, the publisher of the
+												<span class="title">Head First</span> books; I just think they are geniuses at making complex subjects relatively easy to understand.
 											</p>
 										</details>
 										<details>
 											<summary>Q: What are your top two favourite words in the English language?</summary>
 											<p>
-												<span class="answer">A</span>: 
-												<em>Lozenge</em> and 
-												<em>preposterous</em>. The oozy sound of the &ldquo;z&rdquo; in lozenge hints at the soothing, buttery ingredients in these cough lollies that relieve scratchy throats. 
+												<span class="answer">A</span>:
+												<em>Lozenge</em> and
+												<em>preposterous</em>. The oozy sound of the &ldquo;z&rdquo; in lozenge hints at the soothing, buttery ingredients in these cough lollies that relieve scratchy throats.
 											</p>
 											<p>
-												<i>Preposterous</i> became a favourite of mine a few years back after I saw the British TV series 
-												<span class="title">Monarch of the Glen</span>. The story, set in the Scottish Highlands, is about a young man, Archie, who is trying to restore the crumbling castle on his estate. He and his father often quarrel with a neighbour called Kilwillie, a tweedy, perpetually harrumphing, aristocratic gent (played by Julian Fellowes, creator of 
-												<span class="title">Downton Abbey</span>) who was frequently outraged by the behaviour of everyone around him. If someone suggested a particular course of action to Kilwillie of which he didn&rsquo;t approve, he would look at them aghast and spit out his favourite word that expressed his indignation &ndash; &ldquo;Pre-POS-terous!&rdquo; Note the stress on the second syllable, which is important to convey the full sense of Kilwillie&rsquo;s splenetic exasperation over what he has just heard. 
+												<i>Preposterous</i> became a favourite of mine a few years back after I saw the British TV series
+												<span class="title">Monarch of the Glen</span>. The story, set in the Scottish Highlands, is about a young man, Archie, who is trying to restore the crumbling castle on his estate. He and his father often quarrel with a neighbour called Kilwillie, a tweedy, perpetually harrumphing, aristocratic gent (played by Julian Fellowes, creator of
+												<span class="title">Downton Abbey</span>) who was frequently outraged by the behaviour of everyone around him. If someone suggested a particular course of action to Kilwillie of which he didn&rsquo;t approve, he would look at them aghast and spit out his favourite word that expressed his indignation &ndash; &ldquo;Pre-POS-terous!&rdquo; Note the stress on the second syllable, which is important to convey the full sense of Kilwillie&rsquo;s splenetic exasperation over what he has just heard.
 											</p>
 										</details>
 										<details>
 											<summary>Q: Apparently you know the names of all 54 African countries and their capital cities. How did that happen?
                     </summary>
 											<p>
-												<span class="answer">A</span>: A few years ago it occurred to me that I could name plenty of countries in Western Europe but very few in Africa. When asked to name African countries, I could, like most people, come up with a handful, such as South Africa, Kenya, Zimbabwe, Egypt and Libya. But there was no way I would have listed countries such as Malawi, Benin or Mauritania. And cities such as Lilongwe, N&rsquo;Djamena or Antananarivo were totally off my radar. (But I have known about Ouagadougou &ndash; the capital of Burkina Faso &ndash; ever since I was nine years old. This whimsical name, which sounds like an invention of Lewis Carroll, has stayed with me since then.) 
+												<span class="answer">A</span>: A few years ago it occurred to me that I could name plenty of countries in Western Europe but very few in Africa. When asked to name African countries, I could, like most people, come up with a handful, such as South Africa, Kenya, Zimbabwe, Egypt and Libya. But there was no way I would have listed countries such as Malawi, Benin or Mauritania. And cities such as Lilongwe, N&rsquo;Djamena or Antananarivo were totally off my radar. (But I have known about Ouagadougou &ndash; the capital of Burkina Faso &ndash; ever since I was nine years old. This whimsical name, which sounds like an invention of Lewis Carroll, has stayed with me since then.)
 											</p>
 											<p>I&rsquo;ve also noticed a strange phenomenon among many people who are about to go to Africa. They&rsquo;ll say, &ldquo;I&rsquo;m going to Africa&rdquo;.</p>
 											<p>
-												<i>What&rsquo;s so odd about that?</i>, you ask. But do you ever hear anyone say that they&rsquo;re going to Asia? 
+												<i>What&rsquo;s so odd about that?</i>, you ask. But do you ever hear anyone say that they&rsquo;re going to Asia?
 											</p>
 											<p>Not all that often. </p>
 											<p>They&rsquo;ll tell you the name of the country they&rsquo;re going to, such as Indonesia or Thailand or Myanmar. Telling you that they&rsquo;re going to Asia wouldn&rsquo;t be all that informative, because most people are familiar with the names of many Asian countries, and they want more detail.</p>
-											<p>But Africa, on the other hand, seems to be an amorphous mass of undifferentiated nations to most of us. The expression &ldquo;the Dark Continent&rdquo; really is an apt descriptor for Africa, as far as many of us are concerned ; we&rsquo;ve never 
+											<p>But Africa, on the other hand, seems to be an amorphous mass of undifferentiated nations to most of us. The expression &ldquo;the Dark Continent&rdquo; really is an apt descriptor for Africa, as far as many of us are concerned ; we&rsquo;ve never
 												<i>heard</i> of many of African countries, let alone know anything about them, so it&rsquo;s just easier to refer to the entire continent rather than be more specific.
 											</p>
 											<p>The fact that many African countries &ndash; such as Somalia, Chad and the Democratic Republic of the Congo &ndash; are no-go zones for tourists certainly doesn&rsquo;t help to improve our knowledge of them. Knowing that a country has a reputation for kidnapping, bludgeoning or shooting visitors so that they ultimately come home in a box doesn&rsquo;t exactly encourage travellers to flock to said country and learn more about it.</p>
@@ -153,25 +164,25 @@
 										<details>
 											<summary>Q: What are your favourite books?</summary>
 											<p>
-												<span class="answer">A</span>: The book that has had the biggest impact on me over the last few years is 
-												<span class="title">Free Will</span> by Sam Harris. This book has changed my life &ndash; really. It might not have changed my outer circumstances in any noticeable way, but it has certainly changed my thinking &ndash; and my attitudes towards my fellow human beings. 
+												<span class="answer">A</span>: The book that has had the biggest impact on me over the last few years is
+												<span class="title">Free Will</span> by Sam Harris. This book has changed my life &ndash; really. It might not have changed my outer circumstances in any noticeable way, but it has certainly changed my thinking &ndash; and my attitudes towards my fellow human beings.
 											</p>
 											<p>In a nutshell, Sam Harris argues that none of us have any free will, and he argues this case compellingly. This might sound frightening and bleak to some people, but it has certainly made me a lot more understanding &ndash; and forgiving &ndash; of the behaviour of other people. If we really can&rsquo;t do all that much to change our behaviour, and if we are just passive recipients of what our environments and our genetic endowments throw at us, then we should be more understanding of our foibles and fallibilities &ndash; those of other people and of ourselves.</p>
 											<p>There&rsquo;s not a lot of space to go into detail here, but coming to realise that we really have no free will &ndash; although it seems like we do &ndash; doesn&rsquo;t have to lead to fatalism, or passive attitude towards whatever happens to us. We still need to get up in the morning and strive to achieve our goals. Read the book for Sam Harris&rsquo;s detailed explanation of why coming to realise that we have no free will could be our redemption.</p>
 											<p>So what&rsquo;s it about? Briefly, the author sets out to convince the reader that we have no free will. At all. Not even a little bit.</p>
 											<p>This is a frightening prospect for many people &ndash; the idea that our hormones and our genetic endowments, for good or for ill, are the drivers of our thoughts and behaviours. Our environment </p>
-											<p>Other favourite books include 
-												<span class="title">The Missionary Position: Mother Teresa in Theory and Practice</span> by Christopher Hitchens. 
-												<span class="title">Joe Cinque&rsquo;s Consolation</span> by Helen Garner. 
-												<span class="title">The Lost Continent</span> by Bill Bryson. 
-												<span class="title">The Small Hand</span> and 
-												<span class="title">The Woman in Black</span> by Susan Hill. These books aren&rsquo;t necessarily at the top of my list, but they&rsquo;re the ones that come off the top of my head right now. 
+											<p>Other favourite books include
+												<span class="title">The Missionary Position: Mother Teresa in Theory and Practice</span> by Christopher Hitchens.
+												<span class="title">Joe Cinque&rsquo;s Consolation</span> by Helen Garner.
+												<span class="title">The Lost Continent</span> by Bill Bryson.
+												<span class="title">The Small Hand</span> and
+												<span class="title">The Woman in Black</span> by Susan Hill. These books aren&rsquo;t necessarily at the top of my list, but they&rsquo;re the ones that come off the top of my head right now.
 											</p>
 										</details>
 										<details>
 											<summary>Q: Who are your favourite authors?</summary>
 											<p>
-												<span class="answer">A</span>: Bill Bryson, Helen Garner, Paul Theroux, Susan Hill (her ghost stories), Christopher Hitchens, Alain de Botton, Sam Harris. 
+												<span class="answer">A</span>: Bill Bryson, Helen Garner, Paul Theroux, Susan Hill (her ghost stories), Christopher Hitchens, Alain de Botton, Sam Harris.
 											</p>
 										</details>
 										<details>
@@ -179,15 +190,15 @@
 											<p>
 												<span class="answer">A</span>: Ever since I first grabbed a pencil in my chubby infant hand, I have thought of myself as a slow writer. (Slow with handwriting, that is. I&rsquo;m a pretty fast typist, though. I&rsquo;ve also been told by many people that I hold a pen &ldquo;in a funny way&rdquo;, although it looks perfectly normal to me.) I longed to have a hand that could speedily and legibly glide across the page, but I&rsquo;ve been condemned by fate to be a chain-dragging laggard, cursed with a slow and untidy scrawl.
 											</p>
-											<p>Then one day I was in Dymocks bookshop in Sydney, where saw a book titled 
+											<p>Then one day I was in Dymocks bookshop in Sydney, where saw a book titled
 												<span class="title">Teach Yourself Pitman&rsquo;s New Era Shorthand</span>. I bought it without a second thought. It wasn&rsquo;t just the prospect of being able to speedily record words that intrigued me; the idea of being able to reproduce the beautiful geometric shapes of Pitman shorthand also fascinated me. It&rsquo;s filled with elegant curves and straight lines of full, half or double length. I became fascinated with the word statistics when rendered in shorthand form, which looks like a dragonfly. And the word showroom, with its languorous symmetrical curves, resembles the petals of a flower.
 											</p>
 											<p>I diligently practised the exercises in the book and became moderately proficient at it. My speed has never really been tested, although I know that I can write shorthand faster than I can write longhand. I&rsquo;m also fascinated by the possibilities of using shorthand as a secret script; it&rsquo;s gratifying to be able to write something and rest easy knowing that most people won&rsquo;t be able to decipher what I&rsquo;ve written, should I carelessly leave my words lying around.</p>
-											<p>There are many self-appointed pundits who declare that shorthand is totally useless and that digital voice recorders have rendered it obsolete. But there are still 
-												<em>millions</em> of people around the world who take notes by hand, either by necessity or by choice. They could all do their task much more quickly, though, if they could write shorthand. I recently had dealings with a couple of lawyers, and I noticed that they were taking notes &ndash; in longhand. If they knew shorthand they could make much more comprehensive notes. 
+											<p>There are many self-appointed pundits who declare that shorthand is totally useless and that digital voice recorders have rendered it obsolete. But there are still
+												<em>millions</em> of people around the world who take notes by hand, either by necessity or by choice. They could all do their task much more quickly, though, if they could write shorthand. I recently had dealings with a couple of lawyers, and I noticed that they were taking notes &ndash; in longhand. If they knew shorthand they could make much more comprehensive notes.
 											</p>
-											<p>I&rsquo;ve had stops and starts on while learning shorthand, but the one thing that prompted me to continue after a dispiriting layoff was a fantastic website &ndash; 
-												<a href="http://www.long-live-pitmans-shorthand.org.uk/" target="_blank"></a>Long Live Pitman&rsquo;s Shorthand &ndash; that is dedicated to propagating the word about the value of Pitman New Era shorthand. It&rsquo;s run by UK resident Beryl Pratt. This woman, who started to learn shorthand in the early 1970s, is an encyclopedia on the subject, and she has provided a huge range of resources on her site to help anyone who wants to maintain their shorthand skill or start learning it from scratch. 
+											<p>I&rsquo;ve had stops and starts on while learning shorthand, but the one thing that prompted me to continue after a dispiriting layoff was a fantastic website &ndash;
+												<a href="http://www.long-live-pitmans-shorthand.org.uk/" target="_blank"></a>Long Live Pitman&rsquo;s Shorthand &ndash; that is dedicated to propagating the word about the value of Pitman New Era shorthand. It&rsquo;s run by UK resident Beryl Pratt. This woman, who started to learn shorthand in the early 1970s, is an encyclopedia on the subject, and she has provided a huge range of resources on her site to help anyone who wants to maintain their shorthand skill or start learning it from scratch.
 											</p>
 											<p>One of the problems I found while learning shorthand is the shortage of interesting text written in it. At the State Library of NSW you can find Robert Louis Stevenson&rsquo;s Treasure Island written in Pitman, but beyond that there isn&rsquo;t much surviving shorthand text. Instruction manuals on the subject can be pretty tedious, filled with stuff like &ldquo;Dear Mr Smith, Thank you for your letter of 3 February. We are in receipt of your order of 3000 widgets, which we assure you will be delivered by Wednesday 15 March ...&rdquo;.</p>
 											<p>But Beryl Pratt writes a blog on her website in shorthand, together with a longhand transcription underneath. She has been doing this since about 2012, and it&rsquo;s proved to be a great way to get practice at reading shorthand as well as writing it &ndash; and getting something more interesting to read than tedious business letters, which is the content of most of the old texts on the subject. She writes about shorthand itself and how you can make learning it easier, and she also turns her attention to current events &ndash; like the London Olympics back in 2012 &ndash; or excursions in and around London. It helps you to feel that shorthand is still alive, which would be a difficult state of mind to sustain if you could only read business letters written in a sober and tedious 1950s style. </p>
@@ -226,8 +237,8 @@
 									<section class="reviews-and-articles">
 										<div class="reviews-and-articles-wrapper-1">
 											<div class="reviews-and-articles-intro">
-												<p>This is a selection of book reviews and articles that I have written while working at 
-													<span class="title">Good Reading</span> magazine. They range from an interview with a tetchy Jeffrey Archer (who bristled at my suggestion of any lesbian subtext in the first instalment of his 
+												<p>This is a selection of book reviews and articles that I have written while working at
+													<span class="title">Good Reading</span> magazine. They range from an interview with a tetchy Jeffrey Archer (who bristled at my suggestion of any lesbian subtext in the first instalment of his
 													<span class="title">Clifton Chronicles</span>)  to an interview with the almost pathologically hypergraphic American novelist Dean Koontz, who can dash off a book before breakfast.
 												</p>
 												<p>Other articles touch on whether it's acceptable to write notes or scribble in your own books, the practice of buying multiple copies of a book you love and giving them away to your friends and colleagues (a loathsome thing to do if you value your friends), a round-up of books from first-rate travel writers, and a survey of books banned on account of their lewd and lascivious content.</p>
@@ -539,11 +550,11 @@
 											<!----- End of "testimonials-intro" ----->
 											<div class="indiv-test-wrapper">
 												<div class="testimonial">
-													<p>Tim is right up there among the very best editors and sub-editors I’ve worked with in 30-plus years as a journalist. I’ve been writing author interviews, book reviews and an occasional column for 
+													<p>Tim is right up there among the very best editors and sub-editors I’ve worked with in 30-plus years as a journalist. I’ve been writing author interviews, book reviews and an occasional column for
 														<span class="title">Good Reading</span> for a number of years now, and one of the most satisfying aspects of this job has been recognising the great care and consideration with which Tim treats every article I submit for publication. There’s a certain degree of pedantry required to be an excellent editor or sub-editor — getting every word and every sentence just right is not negotiable for those who excel in this role — but Tim manages to bring humanity and warmth to the task. If he has to query a particular word use of mine, or question the accuracy of information included in one of my stories, he does so tactfully and, more importantly, kindly. And, I must confess, he’s usually justified in raising the question.
 														<span class=testimonial-end-quote>”</span>
 													</p>
-													<div class="testimonial-attribution">– Maureen Eppen, journalist, 
+													<div class="testimonial-attribution">– Maureen Eppen, journalist,
 														<span class="title">The West Australian</span>
 													</div>
 												</div>
@@ -606,7 +617,7 @@
 									<!-- End of separator-image-contact -->
 									<section class="contact">
 										<div class="contact-wrapper-1">
-                                            
+
 											<section class="contact-info">
 												<div class="contact-type"><span>Email</span></div>
 												<div class="contact-details">maxbrewer [at] yahoo.com.au</div>
@@ -615,19 +626,19 @@
                                                     <div class="contact-type"><span>Instagram</span></div>
                                                     <div class="contact-details"><span>maxbrewer</span></div>
 											</section>
-                                                
+
                                                 <img src="images/TG_logo_2018_v04.png" class="contact-logo" alt="TG logo">
-                                                
+
 										</div>
 										<!----- End of "contact-wrapper-1" ----->
 									</section>
 									<!-- End of contact -->
-                        
-                        
-                        
-									
-                                    
-                                  
+
+
+
+
+
+
 								</body>
 							</html>
 
