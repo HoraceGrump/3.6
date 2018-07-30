@@ -8,12 +8,12 @@
 
 @import url("//hello.myfonts.net/count/343cb5");
 
-  
+
 @font-face {font-family: 'RatherLoud';src: url('../fonts/Rather/343CB5_0_0.eot');src: url('../fonts/Rather/343CB5_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Rather/343CB5_0_0.woff2') format('woff2'),url('../fonts/Rather/343CB5_0_0.woff') format('woff'),url('../fonts/Rather/343CB5_0_0.ttf') format('truetype');}
- 
-  
+
+
 @font-face {font-family: 'RatherJazzy';src: url('../fonts/Rather/343CB5_1_0.eot');src: url('../fonts/Rather/343CB5_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Rather/343CB5_1_0.woff2') format('woff2'),url('../fonts/Rather/343CB5_1_0.woff') format('woff'),url('../fonts/Rather/343CB5_1_0.ttf') format('truetype');}
- 
+
 html {
     font-size: 62.5%;
 }
@@ -37,7 +37,7 @@ p {
     text-shadow: .4rem .4rem 0 yellow, .6rem .6rem 0 white;
     color: #F2AE2E;
     -webkit-text-stroke: .3rem black;
-    
+
 }
 
 .second h2 {
@@ -46,58 +46,58 @@ p {
     text-shadow: 2px 2px 2px yellow, 4px 4px 0px white;
     padding-top: 10rem;
     -webkit-text-stroke: 1px #F2AE2E;
-    
+
 }
 
 
 .title {
     font-style: italic;
-    
+
 }
 
 
 /**** TABLET  – NAME and TAGLINE – *****/
 
 @media screen and (min-width: 768px) {
-    
+
 .second h1 {
     font-size: 17rem;
     text-shadow: .3rem .3rem .3rem yellow, .6rem .6rem 0px white;
     -webkit-text-stroke: .4rem black;
-    
+
 }
- 
-    
+
+
 .second h2 {
     font-size: 5rem;
     text-shadow: 2px 2px 2px yellow, 4px 4px 0px white;
     padding-top: 10rem;
     -webkit-text-stroke: 1px #F2AE2E;
-    
+
 }
-    
-    
+
+
 }
 
 
 /**** DESKTOP  – NAME and TAGLINE –  *****/
 
 @media screen and (min-width: 1030px) {
-    
+
 .second h1 {
     font-size: 25rem;
     text-shadow: .4rem .4rem 0 yellow, .6rem .6rem 0px white;
     -webkit-text-stroke: .5rem black;
-    
+
 }
 
-    
+
     .second h2 {
     font-size: 7rem;
     text-shadow: 2px 2px 2px yellow, 4px 4px 0px white;
     padding-top: 10rem;
     -webkit-text-stroke: 1px #F2AE2E;
-    
+
 }
 
 }
@@ -112,7 +112,7 @@ p {
 /**** PHONE – background for hero image – no media queries *****/
 
 .one {
-    
+
     height: 100vh;
     background: yellow;
     background-image: url(../images/jeremy-bishop-262139_600_px_wide.jpg);
@@ -125,15 +125,15 @@ p {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    
-    
+
+
     }
 
 
 /**** TABLET & DESKTOP background for hero image *****/
 
 @media screen and (min-width: 768px) {
-   
+
     .one {
     background: yellow;
     background-image:url(../images/jeremy-bishop-262139-1100px_wide.jpg);
@@ -142,7 +142,7 @@ p {
     background-repeat: no-repeat;
     -webkit-background-blend-mode: luminosity;
     background-blend-mode: luminosity;
-    
+
 }
 
 }
@@ -162,23 +162,23 @@ p {
     align-items: center;
     margin-top: auto;
     margin-bottom: auto;
-    
-    
+
+
 }
 
 
 
-   
+
    .second {
     display: flex;
-    
+
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    
+
    }
-   
-   
+
+
    h1 {
     font-family: RatherLoud;
     font-size: 9rem;
@@ -186,25 +186,25 @@ p {
     color: #F2AE2E;
     -webkit-text-stroke: .4rem black;
 }
-   
-        
-       
+
+
+
        h2 {
     font-family: RatherLoud;
     font-size: 3rem;
     text-shadow: 1px 1px 1px yellow, 2px 2px 0px white;
     padding-top: 8rem;
     -webkit-text-stroke: 1px #F2AE2E;
-    
+
 }
-       
-        
-    
+
+
+
     }
-    
-    
-    
-    
+
+
+
+
 }
 
 
@@ -216,7 +216,7 @@ p {
     height: 75vh;
     background: olive;
     display: flex;
-    
+
 }
 
 .two-A {
@@ -234,22 +234,22 @@ p {
 
 
 .second h1 {
-    
+
     -webkit-transform: translateY(800%);
     transform: translateY(800%);
-    
-    -webkit-animation-name: bounce; 
-    animation-name: bounce; 
-    
+
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+
     -webkit-animation-delay: 1.5s;
     animation-delay: 1.5s;
-    
+
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-    
+
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
-    
+
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 
@@ -257,8 +257,8 @@ p {
 
 
 @keyframes bounce {
-  
-  
+
+
 0% {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -266,9 +266,9 @@ p {
     transform: translate3d(0, -2000px, 0);
   }
 
-  
-  
-  
+
+
+
   20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -302,12 +302,12 @@ p {
 .second > h2  {
     background: transparent;
     transform: translateX(-800%);
-    animation-name: editmove; 
+    animation-name: editmove;
     animation-delay: 3.5s;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
+
 }
 
 .editmove {
@@ -317,7 +317,7 @@ p {
 
 
 @keyframes editmove {
-    
+
   from,
   60%,
   75%,
@@ -380,7 +380,7 @@ background-size:16px 16px;
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0 auto;
-    max-width: 1200px;  
+    max-width: 1200px;
 }
 
 
@@ -396,7 +396,7 @@ background-size:16px 16px;
     align-self: center;
     border-radius: 0rem;
     transform: rotate(-10deg);
-    
+
 }
 
 
@@ -405,7 +405,7 @@ background-size:16px 16px;
 .about-blurb {
     padding: 2rem;
     margin-bottom: 10rem;
-    
+
 }
 
 /********** Styling for the para and lists of the About blurb **********/
@@ -414,7 +414,7 @@ background-size:16px 16px;
 
 
 .about-blurb p, ul {
-    
+
     font-family: Roboto;
     font-size: 2.5rem;
     color: yellow;
@@ -423,14 +423,14 @@ background-size:16px 16px;
 }
 
 
-.about-blurb>p:first-child:first-letter { 
-  float: left; 
-  color: yellow; 
-  font-size: 14rem; 
-  line-height: 9rem; 
-  padding-top: 1rem; 
-  padding-right: 1.2rem; 
-  padding-left: 0rem; 
+.about-blurb>p:first-child:first-letter {
+  float: left;
+  color: yellow;
+  font-size: 14rem;
+  line-height: 9rem;
+  padding-top: 1rem;
+  padding-right: 1.2rem;
+  padding-left: 0rem;
   font-family: "Open Sans";
     font-weight: 900;
     text-shadow: .5rem .5rem #3F3F3F, .7rem .7rem rgba(255,255,0,1);
@@ -445,23 +445,23 @@ background-size:16px 16px;
     margin-top: 2em;
 
 }
-  
+
 
 /********** Styling for any links – such as "expletive infixations" – in the About blurb. When hovered, font turns from yellow to v dark grey, but background turns yellow. **********/
 
 .about a:link {
     color: yellow;
-    
+
 }
 
 .about a:visited {
-    color: yellow;    
+    color: yellow;
 }
 
 .about a:hover {
     color: #1D2827;
     background: yellow;
-    
+
 }
 
 
@@ -474,8 +474,8 @@ background-size:16px 16px;
     background-position: -10px -10px;
     background-repeat: no-repeat;
     padding-left: 7rem;
-  
-    
+
+
 }
 
 
@@ -487,18 +487,16 @@ background-size:16px 16px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-origin: content-box;
     background-clip: content-box;
     background-color: gold;
-    -webkit-background-blend-mode: luminosity; 
+    -webkit-background-blend-mode: luminosity;
     background-blend-mode: luminosity; /* Good option for yellow: luminosity, */
-    
+
 }
 
-
 /*** FAQ separator image was too narrow when in landscape on phone, hence this rule ***/
-@media screen and (max-width: 600px) (orientation:landscape) { 
+@media screen and (max-width: 600px) (orientation:landscape) {
 
 .separator-image-FAQ {
     height: 75vh;
@@ -507,17 +505,15 @@ background-size:16px 16px;
 }
 
 
-@media screen and (min-width: 768px) { 
-
-.separator-image-FAQ {
+@media screen and (min-width: 768px) {
+  .separator-image-FAQ {
     background-image: url(../images/alex-holyoake-60249-unsplash_1100_px_wide.jpg); /**** Street art image of woman ****/
     background-position: center center;
     background-size: cover;
-    -webkit-background-blend-mode: luminosity; 
+    -webkit-background-blend-mode: luminosity;
     background-blend-mode: luminosity;
-    
-    }
-
+    background-attachment: fixed;
+  }
 }
 
 
@@ -531,7 +527,7 @@ background-size:16px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
@@ -543,13 +539,13 @@ background-size:16px 16px;
     text-shadow: 1.4rem 1.4rem 1.4rem black;
     letter-spacing: -3rem;
     transform: rotate(-5deg);
-    
+
 }
 
 
 .separator-image-FAQ .up {
   display: inline-block;
-  animation-name: FAQ-upthing; 
+  animation-name: FAQ-upthing;
   animation-duration: 4s;
     animation-timing-function: ease-out;
   animation-iteration-count: infinite;
@@ -558,7 +554,7 @@ background-size:16px 16px;
 
 @-webkit-.separator-image-FAQ .up {
   -webkit-display: inline-block;
-  -webkit-animation-name: FAQ-upthing; 
+  -webkit-animation-name: FAQ-upthing;
   -webkit-animation-duration: 4s;
     -webkit-animation-timing-function: ease-out;
   -webkit-animation-iteration-count: infinite;
@@ -572,7 +568,7 @@ background-size:16px 16px;
   animation-duration: 4s;
 animation-timing-function: ease-out;
   animation-iteration-count: infinite;
-  
+
 }
 
 
@@ -582,18 +578,18 @@ animation-timing-function: ease-out;
   -webkit-animation-duration: 4s;
 -webkit-animation-timing-function: ease-out;
   -webkit-animation-iteration-count: infinite;
-  
+
 }
 
 
 
 @keyframes FAQ-upthing {
-  
+
   0% {
     transform: translateY(0rem);
   }
 
-  
+
   50% {
     transform: translateY(-1.5rem);
   }
@@ -606,12 +602,12 @@ animation-timing-function: ease-out;
 
 
 @-webkit-keyframes FAQ-upthing {
-  
+
   0% {
     -webkit-transform: translateY(0rem);
   }
 
-  
+
   50% {
     -webkit-transform: translateY(-1.5rem);
   }
@@ -625,12 +621,12 @@ animation-timing-function: ease-out;
 
 
 @keyframes FAQ-downthing {
-  
+
   0% {
     transform: translateY(0rem);
   }
 
-  
+
   50% {
     transform: translateY(1.5rem);
   }
@@ -643,12 +639,12 @@ animation-timing-function: ease-out;
 
 
 @-webkit-keyframes FAQ-downthing {
-  
+
   0% {
     -webkit-transform: translateY(0rem);
   }
 
-  
+
   50% {
     -webkit-transform: translateY(1.5rem);
   }
@@ -663,7 +659,7 @@ animation-timing-function: ease-out;
 
 
 .FAQ {
-  
+
     background-color: antiquewhite;
     font-family: Roboto;
 
@@ -677,7 +673,7 @@ animation-timing-function: ease-out;
     padding: 6rem 3rem 3rem 3rem;
     background-color: antiquewhite;
     line-height: 3.5em;
-    
+
 }
 
 
@@ -692,7 +688,7 @@ summary{
 
 .FAQ {
     padding-bottom: 3rem;
-    
+
 }
 
 .FAQ details {
@@ -711,13 +707,13 @@ summary{
     color: yellow;
     padding: 1rem 1rem .75rem 7rem;
     border-radius: .6rem;
- 
+
 }
 
 
 .FAQ details summary {
-    text-indent: -6rem;  
-    
+    text-indent: -6rem;
+
 }
 
 .FAQ-questions details:nth-child(odd) summary {
@@ -728,7 +724,7 @@ summary{
 
 .answer {
     font-weight: 700;
-    
+
 }
 
 
@@ -736,7 +732,7 @@ summary{
 
 
 .FAQ details a:visited {
-    
+
     color: black;
 }
 
@@ -751,21 +747,21 @@ summary{
 
 /** Indents all paras after the first para by 2em **/
 .FAQ-questions details p {
-    
+
     text-indent: 3rem;
 }
 
 /** Ensures that there is NOT indent on FIRST paras in this section **/
 
 .FAQ-questions details p:first-of-type {
-    
+
     text-indent: 0rem;
 }
 
 
 /** Puts some space between end of an answer and the start of the next question **/
 .FAQ-questions details p:last-of-type {
-    
+
     margin-bottom: 4rem;
 }
 
@@ -781,9 +777,8 @@ summary{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-color: gold;
-    
+
 
     background-blend-mode: luminosity; /* Good options for yellow: luminosity, */
     display: flex;
@@ -791,19 +786,18 @@ summary{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 /****  TABLET MEDIA QUERIES – REVIEWS, BACKGROUND IMAGE ****/
-    @media screen and (min-width:768px) {
-
-    .separator-image-reviews-and-articles {
+@media screen and (min-width:768px) {
+  .separator-image-reviews-and-articles {
     background-image: url(../images/paul-murphy-508862-unsplash_1100_px_wide.jpg); /********** Graffiti tunnel **********/
     background-position: center center;
     background-color: chartreuse;
     background-blend-mode: luminosity; /* Good options for yellow: luminosity, */
-        
-        }
+    background-attachment: fixed;
+  }
 }
 
 /****  DESKTOP MEDIA QUERIES – REVIEWS, BACKGROUND IMAGE ****/
@@ -814,12 +808,12 @@ summary{
     background-position: center center;
     background-color: yellow;
     background-blend-mode: luminosity; /* Good options for yellow: luminosity, */
-        
+
         }
 }
-    
-/****  PHONE (NO MEDIA QUERIES) – REVIEWS, H1 ****/  
-    
+
+/****  PHONE (NO MEDIA QUERIES) – REVIEWS, H1 ****/
+
 
 .separator-image-reviews-and-articles h1 {
     font-family: 'RatherLoud', sans-serif;
@@ -835,12 +829,12 @@ summary{
 /****  TABLET MEDIA QUERIES – REVIEWS, H1 ****/
 
  @media screen and (min-width:768px) {
-     
+
      .separator-image-reviews-and-articles h1 {
      font-size: 17rem;
     letter-spacing: -1.75rem;
      }
-        
+
 }
 
 
@@ -849,23 +843,23 @@ summary{
 /****  DESKTOP MEDIA QUERIES – REVIEWS, H1 ****/
 
 @media screen and (min-width:1100px) {
-    
+
     .separator-image-reviews-and-articles {
         display: flex;
         flex-direction: row;
-        
-        
+
+
     }
-    
-    
+
+
     .separator-image-reviews-and-articles h1 {
     font-size: 20rem;
     letter-spacing: -2rem;
         text-shadow: .75rem .75rem .4rem yellow;
          transform: rotate(-4deg);
-       
+
      }
-        
+
 
 
     /**** Puts separation between the ampersand and the two words on either side of it in "Reviews & Articles" ****/
@@ -877,13 +871,13 @@ summary{
 
 
 }
-    
+
 }
 
 
 .separator-image-reviews-and-articles .up {
   display: inline-block;
-  animation-name: reviews-and-articles-upthing; 
+  animation-name: reviews-and-articles-upthing;
   animation-duration: 4s;
     animation-timing-function: ease-out;
   animation-iteration-count: infinite;
@@ -896,16 +890,16 @@ summary{
   animation-duration: 4s;
     animation-timing-function: ease-out;
   animation-iteration-count: infinite;
-  
+
 }
 
 @keyframes reviews-and-articles-upthing {
-  
+
   0% {
     transform: translateY(0rem);
   }
 
-  
+
   50% {
     transform: translateY(-1rem);
   }
@@ -918,12 +912,12 @@ summary{
 
 
 @keyframes reviews-and-articles-downthing {
-  
+
   0% {
     transform: translateY(0rem);
   }
 
-  
+
   50% {
     transform: translateY(1rem);
   }
@@ -937,7 +931,7 @@ summary{
 /********** REVIEWS & ARTICLES **********/
 
 .reviews-and-articles {
-  
+
     background-color: #3F3F3F;
     min-height: 50vh;
 
@@ -948,34 +942,34 @@ summary{
 
 .reviews-and-articles-wrapper-1 {
 
-    
+
     margin: 0 auto;
     max-width: 1200px;
     padding: 6rem 3rem 3rem 3rem;
 
     background-color: #3F3F3F;
-    
+
     font-family: Roboto;
     font-size: 2.5rem;
     color: white;
     line-height: 1.6em;
-    
+
 }
 
 
 .reviews-and-articles-intro {
     margin-bottom: 6rem;
-    
+
 }
 
-.reviews-and-articles-intro>p:first-child:first-letter { 
-  float: left; 
-  color: yellow; 
-  font-size: 14rem; 
-  line-height: 9rem; 
-  padding-top: 1rem; 
-  padding-right: 1.2rem; 
-  padding-left: 0rem; 
+.reviews-and-articles-intro>p:first-child:first-letter {
+  float: left;
+  color: yellow;
+  font-size: 14rem;
+  line-height: 9rem;
+  padding-top: 1rem;
+  padding-right: 1.2rem;
+  padding-left: 0rem;
   font-family: "Open Sans";
     font-weight: 900;
     text-shadow: .5rem .5rem #3F3F3F, .7rem .7rem rgba(255,255,0,1);
@@ -985,22 +979,22 @@ summary{
 
 
 .reviews-and-articles-intro p {
-    
+
     color: white;
-    
+
 }
 
 
 /** Indents all paras after the first para by 3em **/
 .reviews-and-articles-intro p {
-    
+
     text-indent: 3rem;
 }
 
 /** Ensures that there is NOT indent on the FIRST para in this section **/
 
 .reviews-and-articles-intro  p:first-of-type {
-    
+
     text-indent: 0rem;
 }
 
@@ -1022,39 +1016,39 @@ section.book-review-category-header {
     background-color: ;
     margin-bottom: 2rem;
     border: .5rem solid yellow;
-   
+
 }
 
 
 .book-review-category-wrapper {
-    margin-bottom: 4rem;   
+    margin-bottom: 4rem;
 }
 
 
 .reviews-and-articles-wrapper-1 a {
     text-decoration: none;
     /**** Next two lines ensure that the text doesn't bump right up against edges of background. ****/
-  
+
     padding-right: .5em;
-    
-    
-    
+
+
+
 }
 
 .reviews-and-articles-wrapper-1 a:link {
     color: white;
-    
+
 }
 
 .reviews-and-articles-wrapper-1 a:visited {
-    color: white;    
+    color: white;
 }
 
 .reviews-and-articles-wrapper-1 a:hover {
     color: #1D2827;
     background-color: yellow;
 }
-    
+
 .reviews-and-articles-wrapper-1 a:active {
     color: #1D2827;
     background-color: yellow;
@@ -1065,17 +1059,16 @@ section.book-review-category-header {
 
 .separator-image-testimonials {
     height: 60vh;
-    background-image: url(../images/brad-neathery-258926-unsplash-OPTIMISED.jpg); 
+    background-image: url(../images/brad-neathery-258926-unsplash-OPTIMISED.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-color: darkorange;
     background-blend-mode: luminosity; /* Good options for yellow: luminosity, */
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
@@ -1094,31 +1087,33 @@ section.book-review-category-header {
 
 /****  TABLET MEDIA QUERIES – TESTIMONIALS, H1 ****/
 @media screen and (min-width:768px) {
-     
-     .separator-image-testimonials h1 {
-     font-size: 17rem;
+  .separator-image-testimonials {
+    background-attachment: fixed;
+  }
+
+  .separator-image-testimonials h1 {
+    font-size: 17rem;
     letter-spacing: -1.75rem;
     -webkit-text-stroke: .3rem black;
     text-stroke: .3rem black;
-     }
-        
+  }
 }
 
 /****  DESKTOP MEDIA QUERIES – TESTIMONIALS, H1 ****/
 
 @media screen and (min-width:1100px) {
-        
+
     .separator-image-testimonials h1 {
     font-size: 20rem;
     letter-spacing: -2rem;
-       
+
      }
 
 }
 
 .separator-image-testimonials .up {
   display: inline-block;
-  animation-name: reviews-and-articles-upthing; 
+  animation-name: reviews-and-articles-upthing;
   animation-duration: 2.4s;
     animation-timing-function: ease-out;
   animation-iteration-count: infinite;
@@ -1130,57 +1125,57 @@ section.book-review-category-header {
 
 
 .separator-image-testimonials .up:nth-child(2) {
- animation-delay: 0.4s;   
+ animation-delay: 0.4s;
 }
 
 .separator-image-testimonials .up:nth-child(3) {
- animation-delay: 0.6s;   
+ animation-delay: 0.6s;
 }
 
 .separator-image-testimonials .up:nth-child(4) {
- animation-delay: 0.8s;   
+ animation-delay: 0.8s;
 }
 
 .separator-image-testimonials .up:nth-child(5) {
- animation-delay: 1.0s;   
+ animation-delay: 1.0s;
 }
 
 .separator-image-testimonials .up:nth-child(6) {
- animation-delay: 1.2s;   
+ animation-delay: 1.2s;
 }
 
 .separator-image-testimonials .up:nth-child(7) {
- animation-delay: 1.4s;   
+ animation-delay: 1.4s;
 }
 
 .separator-image-testimonials .up:nth-child(8) {
- animation-delay: 1.6s;   
+ animation-delay: 1.6s;
 }
 
 .separator-image-testimonials .up:nth-child(9) {
- animation-delay: 1.8s;   
+ animation-delay: 1.8s;
 }
 
 .separator-image-testimonials .up:nth-child(10) {
- animation-delay: 2.0s;   
+ animation-delay: 2.0s;
 }
 
 .separator-image-testimonials .up:nth-child(11) {
- animation-delay: 2.2s;   
+ animation-delay: 2.2s;
 }
 
 .separator-image-testimonials .up:nth-child(12) {
- animation-delay: 2.4s;   
+ animation-delay: 2.4s;
 }
 
 
 @keyframes reviews-and-articles-upthing {
-  
+
   0% {
     transform: translateY(0rem);
   }
 
-  
+
   50% {
     transform: translateY(-1.5rem);
   }
@@ -1193,7 +1188,7 @@ section.book-review-category-header {
 
 .testimonials {
      min-height: 50vh;
-    
+
     /**** These next 7 lines are based on Lea Verou's patterns gallery ****/
 
     background:
@@ -1210,24 +1205,24 @@ background-size:16px 16px;
     margin: 0 auto;
     max-width: 1200px;
     padding: 6rem 3rem 3rem 5rem;
-    
+
     font-family: Roboto;
     font-size: 2.5rem;
     color: yellow;
     font-weight: 400;
     line-height: 1.6em;
-    
+
 }
 
-        
+
 }
 
 
 
 .testimonials-intro {
-    
+
     margin-bottom: 6rem;
-    
+
 }
 
 
@@ -1238,14 +1233,14 @@ background-size:16px 16px;
 }
 
 
-.testimonials-intro>p:first-child:first-letter { 
-  float: left; 
-  color: yellow; 
-  font-size: 14rem; 
-  line-height: 9rem; 
-  padding-top: 1rem; 
-  padding-right: 1.2rem; 
-  padding-left: 0rem; 
+.testimonials-intro>p:first-child:first-letter {
+  float: left;
+  color: yellow;
+  font-size: 14rem;
+  line-height: 9rem;
+  padding-top: 1rem;
+  padding-right: 1.2rem;
+  padding-left: 0rem;
   font-family: "Open Sans";
     font-weight: 900;
     text-shadow: .5rem .5rem #3F3F3F, .7rem .7rem rgba(255,255,0,1);
@@ -1258,18 +1253,18 @@ background-size:16px 16px;
     background-color: ; /* Insert pink when testing*/
     padding-left: 0rem;
     padding-right: 0rem;
-    
+
 }
 
 .testimonial>p {
-    
+
     align-items: flex-start;
     padding: 0rem 0rem 0rem 2.5rem;
     margin: 2rem 0rem 2rem 0;
     color: white;
     background-color: ; /* Insert aqua when testing*/
-    
-     
+
+
 }
 
 .testimonial-attribution {
@@ -1280,16 +1275,16 @@ background-size:16px 16px;
     margin-top: 0rem;
     padding: 0 3rem 0 1rem;
     margin: 4rem 0 0 0;
-    
+
 }
 
 
 
 
-/* Use text-decoration to underline attributions up to 927 px, then use border-bottom from 928px onwards 
+/* Use text-decoration to underline attributions up to 927 px, then use border-bottom from 928px onwards
 
 @media screen and (max-width: 927px) {
-    
+
     .testimonial-attribution {
         text-decoration: underline dotted yellow;
     }
@@ -1297,7 +1292,7 @@ background-size:16px 16px;
     }
 
 @media screen and (min-width: 928px) {
-    
+
     .testimonial-attribution {
         border-bottom: 6px dotted yellow;
     }
@@ -1307,7 +1302,7 @@ background-size:16px 16px;
 
 ****/
 
-.testimonial::before { 
+.testimonial::before {
   content: "“";
   font-family: Georgia;
   font-size: 1000%;
@@ -1315,17 +1310,17 @@ background-size:16px 16px;
     top: 10rem;
     left: -3rem;
   color: rgba(255,255,0,0.7);
-  
+
    margin-right: 0.1rem;
     margin-top: 6rem;
 }
 
 
     @media screen and (min-width: 768px) {
-        
+
         .testimonial::before {
             top: 8rem;
-    
+
 }
 
 
@@ -1339,7 +1334,7 @@ background-size:16px 16px;
 }
 
 }
-   
+
 
 .indiv-test-wrapper {
     border-bottom: 6px dotted yellow;
@@ -1350,8 +1345,8 @@ background-size:16px 16px;
 .indiv-test-wrapper:nth-of-type(2) {
     border-top: 6px dotted yellow;
     margin-top: 8rem;
-   
-    
+
+
 }
 
 
@@ -1366,30 +1361,28 @@ background-size:16px 16px;
 
 .separator-image-contact {
     height: 60vh;
-    background-image: url(../images/alex-iby-628881-unsplash_600_px_wide.jpg); 
+    background-image: url(../images/alex-iby-628881-unsplash_600_px_wide.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-color: darkorange;
     background-blend-mode: luminosity; /* Good options for yellow: luminosity, */
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
 /****  TABLET MEDIA QUERIES – CONTACT, BACKGROUND IMAGE ****/
-    @media screen and (min-width:768px) {
-
-    .separator-image-contact {
+@media screen and (min-width:768px) {
+  .separator-image-contact {
     background-image: url(../images/alex-iby-628881-unsplash-1100_px_wide.jpg); /********** woman outstretching hand **********/
     background-position: center center;
     background-color: darkorange;
-    background-blend-mode: luminosity; 
-        
-        }
+    background-blend-mode: luminosity;
+    background-attachment: fixed;
+  }
 }
 
 /****  DESKTOP MEDIA QUERIES – CONTACT, BACKGROUND IMAGE ****/
@@ -1400,8 +1393,8 @@ background-size:16px 16px;
     background-image: url(../images/alex-iby-628881-unsplash_2550_px_wide.jpg); /********** woman outstretching hand **********/
     background-position: center center;
     background-color: darkorange;
-    background-blend-mode: luminosity; 
-        
+    background-blend-mode: luminosity;
+
         }
 }
 
@@ -1422,7 +1415,7 @@ background-size:16px 16px;
 /****  TABLET MEDIA QUERIES – CONTACT, H1 ****/
 
 @media screen and (min-width:768px) {
-     
+
     .separator-image-contact h1 {
     font-size: 17rem;
     text-shadow: .6rem .6rem .4rem white;
@@ -1430,28 +1423,28 @@ background-size:16px 16px;
     -webkit-text-stroke: .3rem black;
     text-stroke: .3rem black;
      }
-        
+
 }
 
 /****  DESKTOP MEDIA QUERIES – CONTACT, H1 ****/
 
 @media screen and (min-width:1100px) {
-        
+
     .separator-image-contact h1 {
     font-size: 20rem;
     text-shadow: .70rem .70rem .4rem white;
     letter-spacing: -2rem;
-        
-       
+
+
      }
 
 }
 
 /**********   CONTACT **********/
-      
+
 .contact {
-    background-color: #1D2827; /* very dark grey I found at www.thisistommy.com/work */ 
-    
+    background-color: #1D2827; /* very dark grey I found at www.thisistommy.com/work */
+
 }
 
       .contact-wrapper-1 {
@@ -1492,7 +1485,7 @@ background-size:16px 16px;
 
 .contact-details {
     border-bottom: 1px solid yellow;
-    
+
 }
 
 img {
@@ -1500,48 +1493,48 @@ img {
 }
 
 @media screen and (min-width: 700px) {
-    
-   
-    
+
+
+
     .contact-type {
         padding-top: 3rem;
-        
+
     }
-  
+
     .contact-info {
     font-size: 90%;
 }
-    
+
     .contact-wrapper-1 {
-        
+
         flex-direction: row;
     }
-    
+
     img {
         order: 1;
         margin-top: 2rem;
         margin-left: 5rem;
-        
-      
-      
+
+
+
     }
-    
+
     .contact-info {
         order: 2;
         margin-left: 15rem;
-        
+
     }
-    
-    
+
+
 }
 
 
 
-    
+
     /**********   NAVIGATION **********/
-    
-  
-  
+
+
+
 
 
 
@@ -1634,7 +1627,7 @@ padding-left: 0;
   .nav__items-container {
     max-width: none;
     width: auto;
-    
+
   }
 }
 .nav__toggle:checked ~ .nav__items-container {
@@ -1653,7 +1646,7 @@ padding-left: 0;
   padding-left: 0;
   margin-left: 0;
 align-items: center; /** TG ADDITION: This centres the text when the browser is narrow and the items are displayed in column format **/
-  
+
 }
 
 /** This next block makes the nav switch from its native flex-direction of “column” to “row” once the width exceeds 56.25rem **/
@@ -1685,7 +1678,7 @@ width: 100vw;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
   will-change: color;
-  
+
 }
 @media (min-width: 56.25rem) {
   .nav__link {
